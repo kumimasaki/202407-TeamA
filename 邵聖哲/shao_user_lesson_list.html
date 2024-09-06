@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口宽度以适应设备 -->
+    <title>Lecture Purchase Site</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="user_lesson_list.css"> <!-- 链接到外部CSS样式表 -->
+</head>
+
+<body>
+    <!-- 页眉 -->
+    <header>
+        <div class="header-left">
+            <!-- 用户名显示区域 -->
+            <div class="username">
+                <span id="username-display">Username</span>、ようこそ。
+            </div>
+        </div>
+        <div class="header-title">
+            <!-- 页眉标题 -->
+            講座一覧
+        </div>
+        <div class="header-right">
+            <nav>
+                <!-- 导航按钮 -->
+                <button onclick="location.href='/購入履歴'">購入履歴</button>
+                <button onclick="location.href='/情報変更'">情報変更</button>
+                <button onclick="location.href='/ログアウト'">ログアウト</button>
+            </nav>
+            <!-- 购物车图标 -->
+            <div class="cart-icon" onclick="location.href='/カート'"></div>
+        </div>
+    </header>
+
+    <!-- 商品列表 -->
+    <div class="product-list-container">
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="講座名で検索" />
+                <button type="submit">検索</button>
+            </form>
+        </div>
+        <div class="product-item">
+            <!-- 商品图片区域 -->
+            <div class="product-image-container">
+                <img src="path-to-image.jpg" alt="Product Image" class="product-image">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">商品名</h2>
+                <p class="product-description">商品詳細</p>
+                <p class="product-price">値段</p>
+                <button class="add-to-cart-button">カートに入れる</button>
+            </div>
+        </div>
+        <!-- 可以重复添加其他商品项 -->
+    </div>
+
+    <!-- 主体内容 -->
+    <main></main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
+</body>
+
+</html>
