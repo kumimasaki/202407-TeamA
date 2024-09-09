@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規講座登録</title>
+    <link rel="stylesheet" href="lesson_register.css">
+</head>
+
+<body>
+    <header>
+        <div class="adminname">
+            <span id="adminname-display">adminName</span>、ようこそ。
+        </div>
+        <h2>サイト名前</h2>
+        <nav class="bar">
+            <button onclick="location.href='/情報変更'">情報変更</button>
+            <button onclick="location.href='/管理者追加'">管理者追加</button>
+            <button onclick="location.href='/ログアウト'">ログアウト</button>
+        </nav>
+    </header>
+    <main>
+        <section class="register-section">
+            <div>講座一覧に戻る</div>
+            <h2>新規講座登録</h2>
+            <form action="" method="">
+                <div class="section-details">
+                    <div class="register-section-details">
+                        <a href="#"><img src="" alt="画像"></a>
+                        <input type="file" name="lessonImage">
+                    </div>
+                    <div class="section-details">
+                        <div class="register-section-details">
+                            <label class="course_name" for="course_name"> 講座名</label>
+                            <input type="text" name="course_name" placeholder="講座名を入力してください。">
+                        </div>
+                    </div>
+                    <div class="register-section-details">
+                        <div class="register-section-details_flex">
+                            <label class="fee" for="fee">料金</label>
+                            <input type="text" name="fee" placeholder="料金を入力してください">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <label class="start_date" for="start_date">開始日</label>
+                            <input type="date" name="start_date" placeholder="開始日を入力してください">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <label class="end_date" for="end_date">終了日</label>
+                            <input type="date" name="end_date" placeholder="終了日を入力してください">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <label class="start_time" for="start_time">レッスン開始時間</label>
+                            <input type="time" name="start_time" placeholder="レッスン開始時間を入力してください">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <label class="lesson_time" for="lesson_time">レッスン時間</label>
+                            <input type="time" name="lesson_time" placeholder="レッスン時間を入力してください">
+                        </div>
+                        <div class="register-section-details">
+                            <div class="course_information">講座の情報
+                                <textarea name="course_information" placeholder="講座の情報を入力してください。"></textarea>
+                            </div>
+                        </div>
+                        <div class="course_list__button">
+                            <button class="btn">講座を登録</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
+</body>
+</html>
