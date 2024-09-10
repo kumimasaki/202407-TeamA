@@ -13,7 +13,7 @@
         <div class="adminname">
             <span id="adminname-display">adminName</span>、ようこそ。
         </div>
-        <h2>サイト名前</h2>
+        <h2>講座一覧</h2>
         <nav class="bar">
             <button onclick="location.href='/情報変更'">情報変更</button>
             <button onclick="location.href='/管理者追加'">管理者追加</button>
@@ -23,7 +23,6 @@
 
     <main>
         <article>
-            <div class="lesson_list">講座一覧</div>
             <div class="search-container">
                 <form action="/search" method="">
                     <input type="text" name="query" placeholder="講座名で検索" />
@@ -34,32 +33,36 @@
             <div class="course_list">
                 <div class="section-details">
                     <!-- 商品图片区域 -->
-                    <div class="image-container">
-                        <img src="" alt="講座画像" class="image">
-                    </div>
                     <div class="lecture-item">
-                        <div class="lecture-name">講座名</div>
-                        <textarea name="" placeholder="講座詳細"></textarea>
-                        <div class="price">1,000円</div>
-                        <button class="list__button">講座編集</button>
-                        <button class="list__button">講座削除</button>
-                    </div>
-                </div>
-                    <div class="section-details">
-                        <!-- 商品图片区域 -->
                         <div class="image-container">
                             <img src="" alt="講座画像" class="image">
                         </div>
-                        <div class="lecture-item">
-                            <div class="lecture-name">講座名</div>
-                            <textarea name="" placeholder="講座詳細"></textarea>
-                            <div class="price">1,000円</div>
-                            <button class="list__button">講座編集</button>
-                            <button class="list__button">講座削除</button>
-                        </div>
+                    </div>
+                    <div class="lecture-item">
+                        <div class="lecture-name">講座名</div>
+                        <div class="price">1,000円</div>
+                        <textarea name="description" placeholder="講座詳細"></textarea>
+                        <button class="list_button">講座編集</button>
+                        <button class="list_button">講座削除</button>
                     </div>
                 </div>
-            <div class="course_list__button">
+                <div class="section-details">
+                    <!-- 商品图片区域 -->
+                    <div class="lecture-item">
+                        <div class="image-container">
+                            <img src="" alt="講座画像" class="image">
+                        </div>
+                    </div>
+                    <div class="lecture-item">
+                        <div class="lecture-name">講座名</div>
+                        <div class="price">1,000円</div>
+                        <textarea name="" placeholder="講座詳細"></textarea>
+                        <button class="list_button">講座編集</button>
+                        <button class="list_button">講座削除</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course_list_button">
                 <button class="btn">講座登録</button>
             </div>
         </article>

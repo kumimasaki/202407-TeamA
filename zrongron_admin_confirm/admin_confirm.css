@@ -47,14 +47,6 @@ button:hover {
 .register-section{
     text-align: center;/* 设置居中 */
 }
-/*设置标题*/
-.name{
-    text-align: center; /* 标题文本居中 */
-    font-size: 30px; /* 设置标题字体大小 */
-    font-weight: bold; /* 设置标题为粗体 */
-    color: #000000; /* 设置标题颜色为黑色 */
-    margin-top: 20px;
-}
 
 .section-details{
     height: 350px;/* 设置高度 */
