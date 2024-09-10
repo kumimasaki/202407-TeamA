@@ -40,30 +40,103 @@ nav button {
     font-size: 16px; /* 设置按钮字体大小 */
 }
 
+/* 講座返回 */
+.return{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+/* 講座列表容器样式 */
+.register-section{
+    height: 500px;/* 设置高度 */
+    width: 700px;/* 设置宽度 */
+    margin: 20px auto; /* 使容器居中显示，并设置上下外边距 */
+    padding: 20px; /* 设置容器内边距 */
+    background: #98b1d4; /* 设置容器背景色 */
+    border-radius: 10px; /* 设置容器圆角效果 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 设置容器阴影效果 */
+    display: flex; /* 使容器内容采用弹性布局 */
+    align-items: flex-start; /* 垂直方向上并列对齐 */
+}
+/* 講座图片容器样式 */
+.image-container{
+    width: 200px;/* 设置宽度 */
+    height: 230px;/* 设置高度 */
+    background-color: white;
+    float: left;
+}
+.register-section-details_flex{
+    float: left;
+    margin-right: 30px;
+}
 
+/* 框架样式 */
+input{
+    width: 350px;/* 设置宽度 */
+    height: 30px;/* 设置高度 */
+    margin-bottom: 10px;/* 设置外边距 */
+    border-radius: 10px; /* 设置容器圆角效果 */
+    border: none;/* 设置无边框 */
+}
+/* 講座名 */
+.lecture-name{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 85px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
 
-
-
-
-
-
-
-
-
-
-
+/* 料金*/
+.price{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 100px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
+/* 開始日 */
+.start_date{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 85px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
+/* 終了日 */
+.end_date{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 85px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
+/* レッスン開始時間 */
+.start_time{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 10px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
+/* レッスン時間 */
+.lesson_time{
+    margin-left: 15px;/* 设置外边距 */
+    margin-right: 40px;/* 设置外边距 */
+    font-size: 15px; /* 设置标题字体大小 */
+}
+/* 講座の情報 */
+.description{
+    font-size: 15px; /* 设置标题字体大小 */
+    font-weight: bold; /* 设置标题为粗体 */
+}
+textarea {
+    width: 710px;
+    height: 180px;
+    resize: none;
+}
 
 /* 按钮样式 */
+.button{
+    margin-top: 20px;/*设置外边距*/
+}
 .btn{
     display: flex; /* 弹性盒子布局 */
     justify-content:  center; /* 水平居中 */
-    background-color:#98B1D4; /* 设置标题背景色 */
     height: 35px;/* 设置高度 */
     width: 150px;/* 设置宽度 */
     font-size: 20px; /* 设置标题字体大小 */
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;/*设置外边距*/
+    padding-top: 5px;
     border-radius: 10px; /* 圆角 */
     cursor: pointer; /* 鼠标悬停时显示为手型 */
     transition: background-color 0.3s; /* 添加过渡效果 */
