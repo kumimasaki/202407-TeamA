@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture Purchase Site</title>
-    <link rel="stylesheet" href="user_lesson_list.css">
+    <link rel="stylesheet" href="user_cart_list.css">
 </head>
 
 <body>
@@ -17,11 +17,11 @@
             </div>
         </div>
         <div class="header-title">
-            講座一覧
+            カート一覧
         </div>
         <div class="header-right">
             <nav>
-                <button onclick="location.href='/ログアウト'">講座一覧</button>
+                <button onclick="location.href='/講座一覧'">講座一覧</button>
                 <button onclick="location.href='/購入履歴'">購入履歴</button>
                 <button onclick="location.href='/情報変更'">情報変更</button>
                 <button onclick="location.href='/ログアウト'">ログアウト</button>
@@ -32,12 +32,6 @@
 
     <!-- 商品リスト -->
     <div class="product-list-container">
-        <div class="search-container">
-            <form action="/search" method="get">
-                <input type="text" name="query" placeholder="講座名で検索" />
-                <button type="submit">検索</button>
-            </form>
-        </div>
         <!-- 商品アイテム1 -->
         <div class="product-item">
             <div class="product-image-container">
@@ -47,10 +41,10 @@
                 <h2 class="product-name">商品名 1</h2>
                 <p class="product-description">商品詳細1</p>
                 <p class="product-price">値段：1000円</p>
-                <button class="add-to-cart-button">カートに入れる</button>
+                <button class="delete-button">削除</button>
             </div>
         </div>
-        
+
         <!-- 商品アイテム2 -->
         <div class="product-item">
             <div class="product-image-container">
@@ -60,10 +54,10 @@
                 <h2 class="product-name">商品名 2</h2>
                 <p class="product-description">商品詳細2</p>
                 <p class="product-price">値段：2000円</p>
-                <button class="add-to-cart-button">カートに入れる</button>
+                <button class="delete-button">削除</button>
             </div>
         </div>
-        
+
         <!-- 商品アイテム3 -->
         <div class="product-item">
             <div class="product-image-container">
@@ -73,8 +67,14 @@
                 <h2 class="product-name">商品名 3</h2>
                 <p class="product-description">商品詳細3</p>
                 <p class="product-price">値段：3000円</p>
-                <button class="add-to-cart-button">カートに入れる</button>
+                <button class="delete-button">削除</button>
             </div>
+        </div>
+
+        <!-- 合計金額と支払いボタン -->
+        <div class="total-price-container">
+            <p class="total-price">合計金額: 6000円</p>
+            <button class="pay-button" onclick="location.href='/支払いページ'">支払い</button>
         </div>
     </div>
 
