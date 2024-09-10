@@ -27,7 +27,7 @@ body {
 header {
   background-color: #9eb6ce;
   color: black;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-  padding: 10px 20px;
+  padding: 5px 20px;
   /* 
   border-radius: 8px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
@@ -91,9 +91,7 @@ main {
 }
 
 .buttons {
-  display: flex; /* 启用 flex 布局 */
-  justify-content: center;
-  align-items: center;
+  
   gap: 20px; /* 按钮之间的间距 */
   margin: 30px auto;
   padding: 10px; /* 修改为具体的 padding 值 */
@@ -112,10 +110,10 @@ main {
   justify-content: center;
   align-items: center;
   margin: 5vh auto 2vh;
-  min-width: 250px; /* 确保按钮有足够的宽度 */
-  white-space: nowrap; /* 防止文本换行 */
-  overflow: hidden; /* 避免溢出内容显示 */
-  text-overflow: ellipsis; /* 超出部分显示省略号 */
+   /*min-width: 250px; 确保按钮有足够的宽度 */
+  /*white-space: nowrap;  防止文本换行 */
+  /*overflow: hidden;  避免溢出内容显示 */
+   /*text-overflow: ellipsis; 超出部分显示省略号 */
 }
 
 
