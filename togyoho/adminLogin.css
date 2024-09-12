@@ -18,14 +18,14 @@ body {
 
 .b {
     width: 800px;
-    height: 650px;
-    background-image: url(image/３.jpg); 
+    height: 550px;
+    background-image: url(image/2.jpg); 
     background-size: cover;
 }
 
 .c {
     width: 300px;
-    height: 650px;
+    height: 550px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 
 .d {
     width: 250px;
-    height: 650px;
+    height: 500px;
 
 }
 
@@ -66,7 +66,7 @@ body {
 }
 .f {
     float: right;
-    margin: 20px 0;
+    margin: 10px 0;
     font-family: "Permanent Marker", cursive;
     color:
     #a29bfe;
@@ -93,7 +93,7 @@ body {
 .g {
     position: absolute;
     margin: 20px;
-    bottom: -40px;
+    bottom: 40px;
     text-decoration: none;
     display: block;
     width: 200px;
