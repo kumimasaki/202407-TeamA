@@ -1,7 +1,7 @@
 package teama.com.services;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +29,9 @@ public class LessonService {
 //			そうでない場合
 //			false
 public boolean createLesson(
-		LocalDate startDate,
-		LocalDateTime startTime,
-		LocalDateTime finishTime,
+		Date startDate,
+		DateTime startTime,
+		DateTime finishTime,
 		String lessonName,
 		String lessonDetail,
 		int lessonFee,
@@ -85,9 +85,9 @@ public boolean imageUpdate(String imageName) {
 	if(imageName == null) {
 		return false;
 	} else {
-//		Lesson lesson = lessonDao.findByImageName(imageName);
-//		lesson.setImageName(imageName);
-//		lessonDao.save(lesson);
+		Lesson img = lessonDao.findByImageName(imageName);
+		img.setImageName(imageName);
+		lessonDao.save(img);
 		return true;
 	}
 }
