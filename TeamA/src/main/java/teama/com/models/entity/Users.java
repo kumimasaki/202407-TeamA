@@ -7,23 +7,32 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Users {
+	// user_idの設定
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long userId;
 
+	//user_name
 	private String userName;
+	
+	//user_email
 	private String userEmail;
+	
+	//password
 	private String userPassword;
 
+	//空のコンストラクタ
 	public Users() {
 	}
 
+	//コンストラクタ
 	public Users(String userName, String userEmail, String userPassword) {
 		this.userName = userName;
 		this.userEmail = userEmail;
 		this.userPassword = userPassword;
 	}
 
+	//ゲッターセッター
 	public Long getUserId() {
 		return userId;
 	}
