@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お支払い情報選択</title>
+    <link rel="stylesheet" href="css/users_select_payment.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-left">
+            <div class="username">
+                <span id="username-display" th:text="${username}">Username</span>、ようこそ。
+            </div>
+        </div>
+        <div class="header-title">申し込み手続き</div>
+        <div class="header-right">
+            <nav>
+                <button onclick="location.href='/ログアウト'">講座一覧</button>
+                <button onclick="location.href='/購入履歴'">購入履歴</button>
+                <button onclick="location.href='/情報変更'">情報変更</button>
+                <button onclick="location.href='/ログアウト'">ログアウト</button>
+            </nav>
+            <div class="cart-icon" onclick="location.href='/カート'"></div>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <section class="register-section">
+            <form action="#" method="">
+                <div class="section-details">
+                    <div class="payment-methods">お支払方法選択▶</div>
+                    <div class="content_confirmation">申し込み内容確認▶</div>
+                    <div class="application_complete">申し込み完了</div>
+                </div>
+                <!-- 商品图片区域 -->
+                <div class="item">
+                    <div class="lecture-item">
+                        <div class="image-container">
+                            <img src="" alt="講座画像">
+                        </div>
+                        <div class="lecture-name">講座名</div>
+                        <div class="price">1,000円</div>
+                    </div>
+                    <!-- 商品图片区域 -->
+                    <div class="lecture-item">
+                        <div class="image-container">
+                            <img src="" alt="講座画像">
+                        </div>
+                        <div class="lecture-name">講座名</div>
+                        <div class="price">1,000円</div>
+                    </div>
+                </div>
+                <div class="payment_methods_selection">
+                    <div class="title">お支払方法選択</div>
+                    <div class="circle-container">
+                        <input type="radio" id="option1" name="circleOption" class="circle-radio" />
+                        <label for="option1" class="circle-label">当日現金支払い(無料講座の場合はこちらを選択する)</label><br>
+
+                        <input type="radio" id="option2" name="circleOption" class="circle-radio" />
+                        <label for="option2" class="circle-label">銀行振込</label><br>
+
+                        <input type="radio" id="option3" name="circleOption" class="circle-radio" />
+                        <label for="option2" class="circle-label">クレジットカード決済</label><br>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn">申し込み内容確認</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
+</body>
+
+</html>
