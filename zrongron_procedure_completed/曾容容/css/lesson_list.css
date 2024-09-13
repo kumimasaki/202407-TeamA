@@ -89,7 +89,7 @@ nav button {
     float: left;
 }
 /* 講座名 */
-.lecture-name{
+.lesson-name{
     margin-left: 20px;/* 设置外边距 */
     font-size: 20px; /* 设置标题字体大小 */
     font-weight: bold; /* 设置标题为粗体 */

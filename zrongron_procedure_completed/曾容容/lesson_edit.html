@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>講座編集</title>
-    <link rel="stylesheet" href="css/lesson_edit.css">
+    <link rel="stylesheet" th:href="@{css/lesson_edit.css}">
 </head>
 
 <body>
     <header>
         <div class="adminname">
-            <span id="adminname-display">adminName</span>、ようこそ。
+            <span id="adminname-display" th:text="${adminName}">adminName</span>、ようこそ。
         </div>
         <h2>講座編集</h2>
         <nav class="bar">
@@ -32,8 +32,8 @@
                     </div>
                     <div class="section-details">
                         <div class="register-section-details">
-                            <label class="lecture-name" for="lecture-name"> 講座名:</label>
-                            <input type="text" name="lectureName" placeholder="既に登録している内容">
+                            <label class="lesson-name" for="lesson-name"> 講座名:</label>
+                            <input type="text" name="lessonName" placeholder="既に登録している内容">
                         </div>
                     </div>
                     <div class="register-section-details">

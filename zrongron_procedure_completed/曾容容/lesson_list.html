@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理者講座一覧</title>
-    <link rel="stylesheet" href="css/lesson_list.css">
+    <link rel="stylesheet" th:href="@{css/lesson_list.css}">
 </head>
 
 <body>
     <header>
         <div class="adminname">
-            <span id="adminname-display">adminName</span>、ようこそ。
+            <span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
         </div>
         <h2>講座一覧</h2>
         <nav class="bar">
@@ -30,18 +30,18 @@
                 </form>
             </div>
             <!-- 商品列表 -->
-            <div class="course_list">
-                <div class="section-details">
+            <div class="course_list" th:each="lesson:${lessonList}">
+                <div class="section-details" th:each="@{/lesson/edit{lessonId}(lessonId=${lesson.lessonId})}">
                     <!-- 商品图片区域 -->
                     <div class="lecture-item">
                         <div class="image-container">
-                            <img src="" alt="講座画像" class="image">
+                            <img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.lessonImage})}" alt="講座画像" class="image">
                         </div>
                     </div>
                     <div class="lecture-item">
-                        <div class="lecture-name">講座名</div>
-                        <div class="price">1,000円</div>
-                        <textarea name="description" placeholder="講座詳細"></textarea>
+                        <div class="lesson-name" th:text="${lesson.lessonName}">講座名</div>
+                        <div class="price" th:text="${lesson.price}">1,000円</div>
+                        <textarea name="description" placeholder="講座詳細" th:text="${lesson.description}"></textarea>
                         <button class="list_button">講座編集</button>
                         <button class="btn_delete">講座削除</button>
                     </div>
@@ -50,13 +50,13 @@
                     <!-- 商品图片区域 -->
                     <div class="lecture-item">
                         <div class="image-container">
-                            <img src="" alt="講座画像" class="image">
+                            <img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.lessonImage})}" alt="講座画像" class="image">
                         </div>
                     </div>
                     <div class="lecture-item">
-                        <div class="lecture-name">講座名</div>
-                        <div class="price">1,000円</div>
-                        <textarea name="" placeholder="講座詳細"></textarea>
+                        <div class="lesson-name" th:text="${lesson.lessonName}">講座名</div>
+                        <div class="price" th:text="${lesson.price}">1,000円</div>
+                        <textarea name="" placeholder="講座詳細" th:text="${lesson.description}"></textarea>
                         <button class="list_button">講座編集</button>
                         <button class="btn_delete">講座削除</button>
 
