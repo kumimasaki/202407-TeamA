@@ -1,0 +1,227 @@
+/* 全体スタイル  */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    box-sizing: border-box; 
+}
+
+/* ヘッダースタイル  */
+header {
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); 
+}
+
+.header-left {
+    margin-left: 10px; 
+}
+
+.header-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #000000; 
+    text-align: center; 
+    flex: 1; 
+    margin-left: 370px; 
+}
+
+.header-right {
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+/* ナビゲーションボタン  */
+nav {
+    display: flex; 
+    align-items: center;
+}
+
+nav button {
+    margin-right: 20px; 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #000; 
+}
+
+/* ボタン全般  */
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    background-color: #98B1D4;
+    color: #000; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #7A91BB; 
+}
+
+/* カートアイコン */
+.cart-icon {
+    width: 40px; 
+    height: 40px; 
+    background-image: url('/img/购物车.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    cursor: pointer; 
+}
+
+/* 検索バー  */
+.search-container {
+    margin: 20px 0; /* 上下外边距 */
+    text-align: center; /* 搜索栏居中对齐 */
+}
+
+.search-container input[type="text"],
+.search-container button {
+    padding: 10px; /* 搜索栏输入框和按钮的内边距 */
+    font-size: 16px; /* 字体大小 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+.search-container input[type="text"] {
+    width: 300px; /* 输入框的宽度 */
+}
+
+.search-container button {
+    color: #000; /* 按钮字体颜色 */
+    font-weight: bold; /* 按钮字体加粗 */
+    background-color: #98B1D4; /* 按钮背景颜色 */
+    border: none; /* 移除按钮边框 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: background-color 0.3s ease; /* 背景颜色过渡效果 */
+}
+
+.search-container button:hover {
+    background-color: #7A91BB; /* 鼠标悬停时改变背景颜色 */
+}
+
+/* 商品リストコンテナ - 商品列表容器样式 */
+.product-list-container {
+    width: 1000px; /* 容器宽度 */
+    height: 680px; /* 容器高度 */
+    margin: 20px auto; /* 设置容器上下外边距，并居中 */
+    padding: 20px; /* 容器内边距 */
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* 容器背景为线性渐变 */
+    border-radius: 10px; /* 圆角边框 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 使内容垂直排列 */
+    gap: 20px; /* 每个子元素之间的间距 */
+    align-items: center; /* 子元素居中对齐 */
+    overflow-y: auto; /* 超出时出现垂直滚动条 */
+}
+
+/* 商品アイテム - 单个商品项样式 */
+.product-item {
+    width: 75%; /* 商品项宽度 */
+    height: 32%; /* 商品项高度 */
+    display: flex; /* 使用flex布局 */
+    align-items: flex-start; /* 子元素顶部对齐 */
+    padding: 20px; /* 商品项内边距 */
+    background-color: #fff; /* 背景颜色为白色 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 商品画像コンテナ - 商品图片容器样式 */
+.product-image-container {
+    width: 130px; /* 图片容器宽度 */
+    height: 130px; /* 图片容器高度 */
+    background-color: #000; /* 背景颜色为黑色 */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 图片垂直居中 */
+    justify-content: center; /* 图片水平居中 */
+    margin-right: 20px; /* 右外边距 */
+    margin-left: 10px; /* 左外边距 */
+    margin-top: 40px; /* 顶部外边距 */
+}
+
+/* 商品画像 - 商品图片样式 */
+.product-image {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 100%; /* 图片最大高度为容器高度 */
+    object-fit: cover; /* 图片按比例填充容器 */
+}
+
+/* 商品情報 - 商品信息容器样式 */
+.product-info {
+    flex: 1; /* 占据剩余空间 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 使信息垂直排列 */
+    justify-content: space-between; /* 上下分散对齐 */
+    margin-right: 10px; /* 右外边距 */
+    margin-top: 0px; /* 顶部外边距为0 */
+}
+
+/* 商品名 - 商品名称样式 */
+.product-name {
+    font-size: 20px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    margin-bottom: 10px; /* 下外边距 */
+    margin-left: -110px; /* 左外边距 */
+    text-align: center; /* 居中对齐 */
+}
+
+/* 商品説明 - 商品描述样式 */
+.product-description {
+    max-width:70%;
+    background-color: rgba(191, 231, 250, 0.5); /* 背景颜色 */
+    font-size: 16px; /* 字体大小 */
+    margin-bottom: 0px; /* 下外边距为0 */
+    margin-right: 10px; /* 右外边距 */
+    text-align: left; /* 左对齐 */
+}
+
+/* 商品価格 - 商品价格样式 */
+.product-price {
+    font-weight: bold; /* 字体加粗 */
+    font-size: 17px; /* 字体大小 */
+    color: #e96363; /* 字体颜色为红色 */
+    align-self: flex-end; /* 自身对齐到右下角 */
+    margin-right: 9px;
+    margin-top: 10px; /* 上外边距 */
+}
+
+/* カートに入れるボタン - “加入购物车”按钮样式 */
+.add-to-cart-button {
+    width: 120px; /* 按钮宽度 */
+    padding: 10px 7px; /* 按钮内边距 */
+    font-size: 14px; /* 按钮字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    background-color: #98B1D4; /* 按钮背景颜色 */
+    color: #000000; /* 按钮字体颜色 */
+    border: none; /* 移除按钮边框 */
+    border-radius: 5px; /* 圆角边框 */
+    text-align: center; /* 文字居中对齐 */
+    align-self: flex-end; /* 自身对齐到右下角 */
+}
+
+/* フッター - 页脚样式 */
+footer {
+    padding: 20px; /* 内边距 */
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* 背景为线性渐变 */
+    text-align: center; /* 居中对齐 */
+    color: #fff; /* 字体颜色为白色 */
+    position: absolute; /* 绝对定位 */
+    width: 100%; /* 宽度占满屏幕 */
+    bottom: 0; /* 贴近页面底部 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+footer p {
+    margin: 0; /* 去除段落的默认外边距 */
+    font-size: 14px; /* 字体大小 */
+}
