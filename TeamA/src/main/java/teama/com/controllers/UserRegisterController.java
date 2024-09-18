@@ -50,7 +50,7 @@ public class UserRegisterController {
 	}
 	
     // 登録内容をリセットして、登録画面に戻るメソッド
-    @PostMapping("/reset")
+    @PostMapping("/user/confirm/reset")
     public String resetRegistration(Model model) {
         model.addAttribute("user", new Users()); // 空のユーザーオブジェクトを渡す
         return "userRegister.html"; // 再度登録画面に戻る
