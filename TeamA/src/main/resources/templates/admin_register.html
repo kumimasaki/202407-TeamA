@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminRegister</title>
+    <link rel="stylesheet" th:href="@{/css/adminRegister.css}">
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+    <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&display=swap}"
+        rel="stylesheet">
+  
+      
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+          
+        </div> 
+         <!-- <img  class="b" src="image/2.jpg" width="300px" alt="">  -->
+        <div class="c">
+            <form class="d" th:action="@{/admin/register/process}" method="post">
+                <h1>Admin</h1>
+                <input type="text" class="e" placeholder="ADMIN NAME" name="adminName">
+                <input type="text" class="e" placeholder="EMAIL" name="adminEmail">
+                <input type="password" class="e" placeholder="PASSWORD" name="adminPassword">
+                <input type="password" class="e" placeholder="Confirm PASSWORD" name="confirmAdminPassword">
+                <!-- <a href="#" class="f">Forget your password?</a> -->
+                <button class="g">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -14,45 +14,58 @@ public class Admin_togyoho {
 	private String adminName;
 	private String adminEmail;
 	private String adminPassword;
-	private String adminReenterPassword;
+	private String adminConfirmPassword;
+	
 	public Admin_togyoho() {
 	}
-	public Admin_togyoho(String adminName, String adminEmail, String adminPassword, String adminReenterPassword) {
+
+	public Admin_togyoho(String adminName, String adminEmail, String adminPassword, String adminConfirmPassword) {
 		this.adminName = adminName;
 		this.adminEmail = adminEmail;
 		this.adminPassword = adminPassword;
-		this.adminReenterPassword = adminReenterPassword;
+		this.adminConfirmPassword = adminConfirmPassword;
 	}
+
 	public Long getAdminId() {
 		return adminId;
 	}
+
 	public void setAdminId(Long adminId) {
 		this.adminId = adminId;
 	}
+
 	public String getAdminName() {
 		return adminName;
 	}
+
 	public void setAdminName(String adminName) {
 		this.adminName = adminName;
 	}
+
 	public String getAdminEmail() {
 		return adminEmail;
 	}
+
 	public void setAdminEmail(String adminEmail) {
 		this.adminEmail = adminEmail;
 	}
+
 	public String getAdminPassword() {
 		return adminPassword;
 	}
+
 	public void setAdminPassword(String adminPassword) {
 		this.adminPassword = adminPassword;
 	}
-	public String getAdminReenterPassword() {
-		return adminReenterPassword;
+
+	public String getAdminConfirmPassword() {
+		return adminConfirmPassword;
 	}
-	public void setAdminReenterPassword(String adminReenterPassword) {
-		this.adminReenterPassword = adminReenterPassword;
+
+	public void setAdminConfirmPassword(String adminConfirmPassword) {
+		this.adminConfirmPassword = adminConfirmPassword;
 	}
+	
 	
 	
 
