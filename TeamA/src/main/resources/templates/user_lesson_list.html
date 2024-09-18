@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture Purchase Site</title>
-    <link rel="stylesheet" th:href="@{/lesson_list.css">
+    <link rel="stylesheet" th:href="@{/css/user_lesson_list.css">
 </head>
 
 <body>
@@ -38,16 +38,18 @@
                 <button type="submit">検索</button>
             </form>
         </div>
-        <!-- 商品アイテム1 -->
         <div class="product-item">
             <div class="product-image-container">
-                <img th:src="@{/lesson_img/{imagePath}(imagePath=${lesson.lessonImage})" alt="Lesson Image" class="product-image">
+                <img th:src="@{/lesson_img/{imagePath}(imagePath=${lesson.imageName})}" alt="Lesson Image" class="product-image">
             </div>
             <div class="product-info">
-                <h2 class="product-name">商品名 1</h2>
-                <p class="product-description">商品詳細1</p>
-                <p class="product-price">値段：1000円</p>
-                <button class="add-to-cart-button">カートに入れる</button>
+                <h2 class="product-name" th:text="${lesson.lessonName}">商品名</h2>
+                <p class="product-description" th:text="${lesson.lessonDetail}">商品詳細</p>
+                <p class="product-price" th:text="'値段：' + ${lesson.lessonFee} + '円'">値段</p>
+				<form th:action="@{/cart/list}" method="post">
+				    <input type="hidden" name="lessonId" th:value="${lesson.lessonId}" />
+				    <button type="submit" class="add-to-cart-button">カートに入れる</button>
+				</form>
             </div>
         </div>
         
