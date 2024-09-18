@@ -23,50 +23,50 @@
     <main>
         <div class="return">>>講座一覧に戻る</div>
         <section class="register-section">
-            <form action="" method="">
+            <form action="/lesson/edit/process" method="post" enctype="multipart/form-data">
                 <div class="section-details">
                     <div class="image-container">講座画像
                         <div class="file-upload">
-                            <input type="file" name="lessonImage">
+                            <input type="button" name="lessonImage">
                         </div>
                     </div>
                     <div class="section-details">
                         <div class="register-section-details">
                             <label class="lesson-name" for="lesson-name"> 講座名:</label>
-                            <input type="text" name="lessonName" placeholder="既に登録している内容">
+                            <input type="text" name="lessonName" placeholder="既に登録している内容" value="${lesson.lessonName}">
                         </div>
                     </div>
                     <div class="register-section-details">
                         <div class="register-section-details_flex">
                             <label class="price" for="price">料金:</label>
-                            <input type="text" name="price" placeholder="既に登録している内容">
+                            <input type="text" name="price" placeholder="既に登録している内容" value="${lesson.price}">
                         </div>
                         <div class="register-section-details_flex">
                             <label class="start_date" for="start_date">開始日:</label>
-                            <input type="date" name="startDate" placeholder="既に登録している内容">
+                            <input type="date" name="startDate" placeholder="既に登録している内容"  value="${lesson.startDate}>
                         </div>
                         <div class="register-section-details_flex">
                             <label class="end_date" for="end_date">終了日:</label>
-                            <input type="date" name="endDate" placeholder="既に登録している内容">
+                            <input type="date" name="endDate" placeholder="既に登録している内容" value="${lesson.endDate}>
                         </div>
                         <div class="register-section-details_flex">
                             <label class="start_time" for="start_time">レッスン開始時間:</label>
-                            <input type="time" name="startTime" placeholder="既に登録している内容">
+                            <input type="time" name="startTime" placeholder="既に登録している内容" value="${lesson.startTime}>
                         </div>
                         <div class="register-section-details_flex">
                             <label class="lesson_time" for="lesson_time">レッスン時間:</label>
-                            <input type="time" name="lessonTime" placeholder="既に登録している内容">
+                            <input type="time" name="lessonTime" placeholder="既に登録している内容" value="${lesson.lessonTime}>
                         </div>
                         <div class="register-section-details_flex">
                             <div class="description">講座の情報
-                                <textarea name="description" placeholder="講座の情報を入力してください。"></textarea>
+                                <textarea name="description" placeholder="講座の情報を入力してください。" value="${lesson.description}></textarea>
                             </div>
                         </div>
                         <div class="button">
-                            <input type="hidden" name="button" value="">
+                            <input type="hidden" name="button" th:value="${lesson.lessonId}">
                             <button class="btn" onclick="history.back();" type="button">保存せずに戻る</button>
                             <button class="btn">変更を保存</button>
-                            <input type="hidden" name="" value="">
+                            <input type="hidden" name="" th:value="${lesson.lessonId}>
                             <button class="btn_delete">講座を削除</button>
                         </div>
                     </div>

@@ -62,6 +62,7 @@ public class LessonServiceShao {
 		}
 	}
 
+
 	// image更新処理のチェック
 	public boolean imageUpdate(String imageName) {
 		if (imageName == null) {
@@ -82,4 +83,5 @@ public class LessonServiceShao {
 	public Lesson findByLessonId(Long lessonId) {
 		return lessonDaoShao.findByLessonId(lessonId);
 	}
+
 }
