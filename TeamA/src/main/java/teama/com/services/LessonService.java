@@ -67,8 +67,8 @@ public Lesson imageEditCheck(String imageName) {
 	if(imageName == null) {
 		return null;
 	} else {
-//		return lessonDao.findByImageName(imageName);
-		return null;
+		return lessonDao.findByImageName(imageName);
+//		return null;
 	}
 }
 
