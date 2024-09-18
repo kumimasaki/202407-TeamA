@@ -33,14 +33,8 @@ public class LessonServiceSou {
 	// そうでない場合
 	// false
 	// entityのlessonを見て順番に書く
-	public boolean createLesson(LocalDate startDate, 
-			LocalDateTime startTime, 
-			LocalDateTime finishTime,
-			String lessonName, 
-			String lessonDetail, 
-			int lessonFee, 
-			String imageName, 
-			Long adminId) {
+	public boolean createLesson(LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime,
+			String lessonName, String lessonDetail, int lessonFee, String imageName, Long adminId) {
 		if (lessonDao.findByLessonName(lessonName) == null) {
 			lessonDao.save(new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
 					adminId));
@@ -50,4 +44,51 @@ public class LessonServiceSou {
 
 		}
 	}
+
+	// 編集画面を表示するときのチェック
+	// もし、lessonId == null null
+	// そうでない場合、
+	// findByAdminIdの情報をコントローラークラスに渡す
+	public Lesson lessonEditCheck(Long lessonId) {
+		if (lessonId == null) {
+			return null;
+		} else {
+			return lessonDao.findByLessonId(lessonId);
+		}
+	}
+	// 更新処理のチェック
+	// もし、lessonId==nullだったら、更新処理はしない
+	// false
+	// そうでない場合、
+	// 更新処理をする
+	// コントローラークラスからもらった、lessonIdを使って、編集する前の、データを取得
+	// 変更するべきところだけ、セッターを使用してデータの更新をする。
+	// trueを返す
+	//
+	public boolean lessonUpdate(Long lessonId,
+			LocalDate startDate,
+			LocalDateTime startTime,
+			LocalDateTime finishTime,
+			String lessonName,
+			String lessonDetail,
+			int lessonFee,
+			String imageName,
+			Long adminId) {
+		if(lessonId == null) {
+			return false;
+		}else {
+			Lesson lesson = lessonDao.findByLessonId(lessonId);
+			lesson.setStartDate(startDate);
+			lesson.setStartTime(startTime);
+			lesson.setFinishTime(finishTime);
+			lesson.setImageName(imageName);
+			lesson.setLessonDetail(lessonDetail);
+			lesson.setLessonFee(lessonFee);
+			lesson.setImageName(imageName);
+			lesson.setAdminId(adminId);
+			lessonDao.save(lesson);
+			return true;
+		}
+	}
+
 }

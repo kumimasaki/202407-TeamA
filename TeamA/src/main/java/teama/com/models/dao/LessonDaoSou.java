@@ -24,9 +24,9 @@ public interface LessonDaoSou extends JpaRepository<Lesson, Long> {
 
 	// 編集画面を表示(単一取得)
 	// SELECT * FROM lesson WHERE lesson_id = ?
-	Lesson findByLessonId(Long lesson_id);
+	Lesson findByLessonId(Long lessonId);
 
 	// 削除使用します(単一取得)
 	// DLETE FROM lesson WHERE lesson-id = ?
-	void deleteByLessonId(Long lesson_id);
+	void deleteByLessonId(Long lessonId);
 }
