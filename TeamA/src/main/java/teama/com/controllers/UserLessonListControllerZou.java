@@ -27,7 +27,7 @@ public class UserLessonListControllerZou {
     private HttpSession session;
 
     // 1. コース一覧ページの表示
-    @GetMapping("/user/lesson/list")
+    @GetMapping("/user/lesson/list/test")
     public String getLessonList(Model model) {
         // セッションを通じてユーザーログイン情報を確認
         Users user = (Users) session.getAttribute("loginUserInfo");

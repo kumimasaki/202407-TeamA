@@ -19,7 +19,7 @@ body {
 .b {
     width: 800px;
     height: 550px;
-    background-image: url(../image/2.jpg);  
+    background-image: url(image/2.jpg); 
     background-size: cover;
 }
 
@@ -109,7 +109,6 @@ body {
     background-size: 400%;
     border-radius: 30px;
     z-index: 1;
-	
 }
 
 .g:hover {

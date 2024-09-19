@@ -29,7 +29,7 @@ public String postAdminLoginPage(@RequestParam String adminEmail,
 	if(admin_togyoho ==null) {
 		return "admin_login.html";
 	}else {
-		session.setAttribute("loginAdminInfo", admin_togyoho);
+		session.setAttribute("adminInfo", admin_togyoho);
 		return "redirect:/lesson/list";
 	}
 }
