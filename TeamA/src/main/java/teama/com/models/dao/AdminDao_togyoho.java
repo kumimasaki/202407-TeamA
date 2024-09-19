@@ -10,9 +10,9 @@ public interface AdminDao_togyoho extends JpaRepository<Admin_togyoho, Long> {
 
 	Admin_togyoho save(Admin_togyoho admin_togyoho);
 	
-	Admin_togyoho findByadminEmail(String adminEmail);
+	Admin_togyoho findByAdminEmail(String adminEmail);
 	
-	Admin_togyoho findByadminEmailAndAdminPassword(String adminEmail,String adminPassword);
+	Admin_togyoho findByAdminEmailAndAdminPassword(String adminEmail,String adminPassword);
 	
 	Admin_togyoho findByAdminPasswordAndAdminConfirmPassword(String adminPassword,String adminConfirmPassword);
 	

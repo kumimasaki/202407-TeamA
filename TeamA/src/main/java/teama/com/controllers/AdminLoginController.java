@@ -30,7 +30,7 @@ public String postAdminLoginPage(@RequestParam String adminEmail,
 		return "admin_login.html";
 	}else {
 		session.setAttribute("adminInfo", admin_togyoho);
-		return "redirect:/admin/confirm";
+		return "redirect:/lesson/list";
 	}
 }
 }
