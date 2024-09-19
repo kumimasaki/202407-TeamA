@@ -23,13 +23,15 @@
     <main>
         <div class="return">>>講座一覧に戻る</div>
         <section class="register-section">
+			<div class="image-container">講座画像
+			    <div class="file-upload">
+					<a href="lesson_img_edit.html">
+			       <!--button class="btn2">講座画像を変更</button-->
+				   <button class="btn2" th:attr="onClick='location.href=\''+'/lesson/image/change/'+${lesson.lessonId}+'\''">講座画像を変更</button>
+			    </div>
+			</div>
             <form action="/lesson/edit/process" method="post" enctype="multipart/form-data">
                 <div class="section-details">
-                    <div class="image-container">講座画像
-                        <div class="file-upload">
-                            <input type="button" name="lessonImage">
-                        </div>
-                    </div>
                     <div class="section-details">
                         <div class="register-section-details">
                             <label class="lesson-name" for="lesson-name"> 講座名:</label>

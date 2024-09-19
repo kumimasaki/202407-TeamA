@@ -85,7 +85,7 @@ input{
     border: none;/* 设置无边框 */
 }
 /* 講座名 */
-.lecture-name{
+.lesson-name{
     margin-left: 15px;/* 设置外边距 */
     margin-right: 85px;/* 设置外边距 */
     font-size: 15px; /* 设置标题字体大小 */

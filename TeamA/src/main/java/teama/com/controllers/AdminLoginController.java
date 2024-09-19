@@ -18,7 +18,7 @@ private AdminService_togyoho adminService_togyoho;
 private HttpSession session;
 
 @GetMapping("/admin/login")
-public String getAdminLoginPage() {
+public String getdAminLoginPage() {
 	return "admin_login.html";
 } 
 
@@ -29,8 +29,8 @@ public String postAdminLoginPage(@RequestParam String adminEmail,
 	if(admin_togyoho ==null) {
 		return "admin_login.html";
 	}else {
-		session.setAttribute("adminInfo", admin_togyoho);
-		return "redirect:/admin/confirm";
+		session.setAttribute("loginAdminInfo", admin_togyoho);
+		return "redirect:/lesson/list";
 	}
 }
 }

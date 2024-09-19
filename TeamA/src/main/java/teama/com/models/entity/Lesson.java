@@ -36,7 +36,19 @@ public class Lesson {
 		this.imageName = imageName;
 		this.adminId = adminId;
 	}
-
+	public Lesson(Long lessonId, LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime, String lessonName,
+			String lessonDetail, int lessonFee, String imageName, Long adminId) {
+		this.lessonId = lessonId;
+		this.startDate = startDate;
+		this.startTime = startTime;
+		this.finishTime = finishTime;
+		this.lessonName = lessonName;
+		this.lessonDetail = lessonDetail;
+		this.lessonFee = lessonFee;
+		this.imageName = imageName;
+		this.adminId = adminId;
+	}
+	
 	public Long getLessonId() {
 		return lessonId;
 	}
