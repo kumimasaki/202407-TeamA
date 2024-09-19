@@ -1,0 +1,138 @@
+/* 全体スタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 情報確認案内文のスタイル */
+.confirmation-message {
+    font-weight: bold; /* フォントを太字にする */
+    text-align: center; /* 文字を中央に配置 */
+    font-size: 16px;
+    color: #333;
+    margin-top: 140px; /* ヘッダーとの余白を設定 */
+    margin-bottom: 1px;
+}
+
+/* 主コンテンツエリアのスタイル */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+
+/* ユーザー情報コンテナのスタイル */
+.user-info-container {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* 入力フィールドのラベルスタイル */
+.user-info-container label {
+    font-weight: bold; /* ラベルを太字にする */
+}
+
+/* 入力フィールドのスタイル */
+.user-info-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* ボタンコンテナのスタイル */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* ボタン間のスペースを均等に */
+    width: 370px;
+}
+
+/* チェックボックスコンテナのスタイル */
+.toggle-password-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* チェックボックスのスタイル */
+.toggle-password-container input[type="checkbox"] {
+    margin-right: 300px; /* チェックボックスの右マージンを設定 */
+}
+
+/* チェックボックスラベルのスタイル */
+.toggle-password-container label {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap; /* ラベルの文字が折り返されないようにする */
+}
+
+/* ボタンのスタイル */
+.button-container button {
+    padding: 10px 20px;
+    background-color: #98B1D4; /* ボタンの背景色 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0;
+    width: 48%;
+}
+
+/* ボタンのホバースタイル */
+.button-container button:hover {
+    background-color: #6A8AB8; /* ホバー時の背景色 */
+}
+
+/* ヘッダーのスタイル */
+header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* グラデーション背景 */
+}
+
+/* ヘッダータイトルのスタイル */
+.header-title {
+    font-size: 24px;
+    color: #000000; /* ヘッダー文字の色 */
+}
+
+/* フッターのスタイル */
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* グラデーション背景 */
+    text-align: center;
+    color: #000000; /* フッター文字の色 */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/* フッター内の段落スタイル */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

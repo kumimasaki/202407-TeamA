@@ -26,7 +26,7 @@ public class UserLessonListController {
 	@Autowired
 	private HttpSession session;
 
-	// 1. コース一覧ページの表示
+	// 1.コース一覧ページの表示
 	@GetMapping("/user/lesson/list")
 	public String getLessonList(Model model) {
 		
@@ -38,14 +38,14 @@ public class UserLessonListController {
 			return "redirect:/user/login"; 
 		} else {
 			// serviceからすべての情報を取得
-			List<Lesson> lessonList = lessonServiceShao.selectAllLessonList(user.getUserId());
+			List<Lesson> lessonList = lessonServiceShao.selectAllLessonList(user.getUserId()); //adminid？
 			model.addAttribute("lessonList", lessonList);
 			model.addAttribute("username", user.getUserName());
 			return "user_cart_list.html";
 		}
 	}
 
-	// 3. カートに追加
+	//  2.カートに追加
 	@PostMapping("/cart/list")
 	public String addCartPage(@RequestParam Long lessonId, Model model) {
 		Users user = (Users) session.getAttribute("loginUserInfo");
@@ -80,7 +80,7 @@ public class UserLessonListController {
 		}
 	}
 	
-	// カートに同じ講座があるかどうかチェック
+	// 3.カートに同じ講座があるかどうかチェック
 	public boolean isLessonExist(Long lessonId, LinkedList<Lesson> list) {
 		Iterator<Lesson> ite = list.iterator();
 		boolean isExist = false;
