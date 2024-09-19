@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Purchase Site</title>
+    <link rel="stylesheet" th:href="@{/css/user_confirm.css"> 
+</head>
+
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="header-title">新規登録確認</div>
+    </header>
+
+    <!-- 情報確認案内文 -->
+    <div class="confirmation-message">
+        既に情報確認した場合、登録確認ボタンを押してください。
+    </div>
+
+    <!-- ユーザー情報確認フォーム -->
+    <main>
+		<form action="/user/register/check" method="post"> 
+        <div class="user-info-container">
+            <label for="username">ユーザー名：</label>
+            <input type="text" id="username" value="[[${userName}]]" readonly><br>
+
+            <label for="email">メールアドレス：</label>
+            <input type="email" id="email" value="[[${userEmail}]]" readonly><br>
+
+            <!-- パスワード表示 -->
+            <label for="password">パスワード：</label>
+            <input type="password" id="password" value="[[${userPassword}]]" readonly>
+
+            <!-- パスワード表示切替 -->
+            <div class="toggle-password-container">
+                <label for="togglePassword">パスワードを表示</label>
+                <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">
+            </div>
+        </div>
+
+        <!-- ボタンエリア -->
+        <div class="button-container">
+            <button type="button" onclick="goBack()">取り消し</button>
+            <button type="submit">登録確認</button>
+        </div>
+    </main>
+
+    <!-- フッター部分 -->
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
+
+    <!-- パスワード表示切替機能 -->
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text"; 
+            } else {
+                passwordField.type = "password";
+            }
+        }
+
+        <!-- 戻るボタン機能 -->
+        function goBack() {
+            window.history.back(); 
+        }
+    </script>
+</body>
+
+</html>

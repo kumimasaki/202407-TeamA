@@ -2,6 +2,7 @@ package teama.com.models.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 import teama.com.models.entity.Users;
 
 @Repository
@@ -16,5 +17,8 @@ public interface UsersDao extends JpaRepository<Users, Long> {
 
 	//　SELECT * FROM users WHERE user_email and password =?
 	Users findByUserEmailAndUserPassword(String userEmail, String userPassword);
+	
+	 // ユーザー登録確認確認するチェック
+	Users findByUserName(String userName);
 
 }
