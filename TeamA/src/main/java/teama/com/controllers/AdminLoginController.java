@@ -18,7 +18,7 @@ private AdminService_togyoho adminService_togyoho;
 private HttpSession session;
 
 @GetMapping("/admin/login")
-public String getAdminLoginPage() {
+public String getdAminLoginPage() {
 	return "admin_login.html";
 } 
 

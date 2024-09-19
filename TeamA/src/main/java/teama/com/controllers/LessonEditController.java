@@ -21,50 +21,44 @@ import jakarta.servlet.http.HttpSession;
 import teama.com.models.entity.Admin;
 import teama.com.models.entity.Lesson;
 import teama.com.services.LessonService;
-import teama.com.services.LessonServiceSou;
 
 @Controller
 public class LessonEditController {
 	@Autowired
-	private LessonServiceSou lessonService;
+	private LessonService lessonService;
 
 	@Autowired
 	private HttpSession session;
-	
-	
+
 	// 編集画面の表示
 	@GetMapping("/lesson/edit{lessonId}")
-	public String getLessonEditPage(@PathVariable Long lessonId,Model model) {
+	public String getLessonEditPage(@PathVariable Long lessonId, Model model) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もしadmin==null ログイン画面にリダイレクトする
-		if(admin == null) {
+		if (admin == null) {
 			return "redirect:/admin/login";
-		}else {
+		} else {
 			// 編集画面に表示させる情報を変数に格納 lesson
 			Lesson lesson = lessonService.lessonEditCheck(lessonId);
 			// もしlesson == nullだったら、商品一覧ページにリダイレクトする
 			// そうでない場合、編集画面に編集する内容を渡す
 			// 編集画面を表示
-			if(lesson == null) {
+			if (lesson == null) {
 				return "redirect:/lesson/list";
-			}else {
-				model.addAttribute("admin",admin.getAdminName());
-				model.addAttribute("lesson",lesson);
+			} else {
+				model.addAttribute("admin", admin.getAdminName());
+				model.addAttribute("lesson", lesson);
 				return "lesson_edit.html";
 			}
 		}
 	}
+
 	// 更新処理をする
 	@PostMapping("/lesson/edit/process")
-	public String lessonUpdate(@RequestParam MultipartFile lessonImage,
-			@RequestParam String lessonName,
-			@RequestParam int price,
-			@RequestParam LocalDate startDate,
-			@RequestParam LocalDateTime endDate,
-			@RequestParam LocalDateTime startTime,
-			@RequestParam String description,
-			@RequestParam Long lessonId) {
+	public String lessonUpdate(@RequestParam MultipartFile lessonImage, @RequestParam String lessonName,
+			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalDateTime endDate,
+			@RequestParam LocalDateTime startTime, @RequestParam String description, @RequestParam Long lessonId) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もし、admin == nullだったら、ログイン画面にリダイレクトする
@@ -72,19 +66,20 @@ public class LessonEditController {
 		// ファイルの保存
 		// もし、lessonUpdateの結果がtrueの場合は、講座変更完了にリダイレクト
 		// そうでない場合、講座編集画面にリダイレクトする
-		if(admin == null) {
+		if (admin == null) {
 			return "redirect:/admin/login";
-		}else {
+		} else {
 			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
 					+ lessonImage.getOriginalFilename();
 			try {
-				Files.copy(lessonImage.getInputStream(), Path.of("src/main/resources/static/lesson-img/"+fileName));
+				Files.copy(lessonImage.getInputStream(), Path.of("src/main/resources/static/lesson-img/" + fileName));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			if(lessonService.lessonUpdate(lessonId,startDate, startTime,endDate,description, lessonName, price, fileName, admin.getAdminId())) {
+			if (lessonService.lessonUpdate(lessonId, startDate, startTime, endDate, description, lessonName, price,
+					fileName, admin.getAdminId())) {
 				return "lesson_edit_complete.html";
-			}else {
+			} else {
 				return "redirect:/lesson/edit";
 			}
 		}
