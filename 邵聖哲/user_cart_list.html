@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 文档类型声明，定义为HTML5 -->
+<html lang="en"> <!-- HTML文档开始，语言设为英语 -->
+
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口以适应不同设备的宽度 -->
+    <title>Lecture Purchase Site</title> <!-- 设置网页标题 -->
+    <link rel="stylesheet" href="user_cart_list.css"> <!-- 链接到外部CSS样式表 -->
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-left"> <!-- 头部左侧区域 -->
+            <div class="username"> <!-- 显示用户名区域 -->
+                <span id="username-display" th:text="${username}">Username</span>、ようこそ。 <!-- 显示用户名和欢迎文字 -->
+            </div>
+        </div>
+        <div class="header-title"> <!-- 头部标题区域 -->
+            カート一覧 <!-- 购物车列表 -->
+        </div>
+        <div class="header-right"> <!-- 头部右侧区域 -->
+            <nav> <!-- 导航区域 -->
+                <button onclick="location.href='/講座一覧'">講座一覧</button> <!-- 按钮，点击后跳转到讲座列表页面 -->
+                <button onclick="location.href='/購入履歴'">購入履歴</button> <!-- 按钮，点击后跳转到购买历史页面 -->
+                <button onclick="location.href='/情報変更'">情報変更</button> <!-- 按钮，点击后跳转到信息修改页面 -->
+                <button onclick="location.href='/ログアウト'">ログアウト</button> <!-- 按钮，点击后跳转到注销页面 -->
+            </nav>
+            <div class="cart-icon" onclick="location.href='/カート'"></div> <!-- 购物车图标，点击后跳转到购物车页面 -->
+        </div>
+    </header>
+
+    <!-- 商品リスト -->
+    <div class="product-list-container"> <!-- 商品列表容器 -->
+        <!-- 商品アイテム1 -->
+        <div class="product-item"> <!-- 商品项1 -->
+            <div class="product-image-container"> <!-- 商品图片容器 -->
+                <img src="path/to/product1-image.jpg" alt="Product 1 Image" class="product-image"> <!-- 商品1的图片 -->
+            </div>
+            <div class="product-info"> <!-- 商品信息区域 -->
+                <h2 class="product-name">商品名 1</h2> <!-- 商品名称1 -->
+                <p class="product-description">商品詳細1</p> <!-- 商品详细信息1 -->
+                <p class="product-price">値段：1000円</p> <!-- 商品价格1 -->
+                <form th:action="@{/delete/{id}(id=${product1.id})}" method="post"> <!-- 删除商品的表单 -->
+                    <button type="submit" class="delete-button">削除</button> <!-- 删除按钮 -->
+                </form>
+            </div>
+        </div>
+
+        <!-- 商品アイテム2 -->
+        <div class="product-item"> <!-- 商品项2 -->
+            <div class="product-image-container"> <!-- 商品图片容器 -->
+                <img src="path/to/product2-image.jpg" alt="Product 2 Image" class="product-image"> <!-- 商品2的图片 -->
+            </div>
+            <div class="product-info"> <!-- 商品信息区域 -->
+                <h2 class="product-name">商品名 2</h2> <!-- 商品名称2 -->
+                <p class="product-description">商品詳細2</p> <!-- 商品详细信息2 -->
+                <p class="product-price">値段：2000円</p> <!-- 商品价格2 -->
+                <form th:action="@{/delete/{id}(id=${product2.id})}" method="post"> <!-- 删除商品的表单 -->
+                    <button type="submit" class="delete-button">削除</button> <!-- 删除按钮 -->
+                </form>
+            </div>
+        </div>
+
+        <!-- 商品アイテム3 -->
+        <div class="product-item"> <!-- 商品项3 -->
+            <div class="product-image-container"> <!-- 商品图片容器 -->
+                <img src="path/to/product3-image.jpg" alt="Product 3 Image" class="product-image"> <!-- 商品3的图片 -->
+            </div>
+            <div class="product-info"> <!-- 商品信息区域 -->
+                <h2 class="product-name">商品名 3</h2> <!-- 商品名称3 -->
+                <p class="product-description">商品詳細3</p> <!-- 商品详细信息3 -->
+                <p class="product-price">値段：3000円</p> <!-- 商品价格3 -->
+                <form th:action="@{/delete/{id}(id=${product3.id})}" method="post"> <!-- 删除商品的表单 -->
+                    <button type="submit" class="delete-button">削除</button> <!-- 删除按钮 -->
+                </form>
+            </div>
+        </div>
+
+        <!-- 合計金額と支払いボタン -->
+        <div class="total-price-container"> <!-- 总金额容器 -->
+            <p class="total-price">合計金額: 6000円</p> <!-- 显示总金额 -->
+            <button class="pay-button" onclick="location.href='/支払いページ'">支払い</button> <!-- 支付按钮，点击后跳转到支付页面 -->
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <p>Copyright©2024 Team A.</p> <!-- 页脚，显示版权信息 -->
+    </footer>
+</body>
+
+</html>
