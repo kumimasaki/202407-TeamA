@@ -12,7 +12,7 @@ public class AdminService_togyoho {
 private AdminDao_togyoho adminDao_togyoho; 
 
 public boolean createAdmin(String adminName, String adminEmail, String adminPassword, String adminConfirmPassword) {
-	if(adminDao_togyoho.findByadminEmail(adminEmail)==null) {
+	if(adminDao_togyoho.findByAdminEmail(adminEmail)==null) {
 		adminDao_togyoho.save(new Admin_togyoho(adminName,adminEmail,adminPassword, adminConfirmPassword));
 		return true;
 	}else {
@@ -21,7 +21,7 @@ public boolean createAdmin(String adminName, String adminEmail, String adminPass
 }
 
 public Admin_togyoho checkLogin(String adminEmail,String adminPassword) {
-	Admin_togyoho admin_togyoho =adminDao_togyoho.findByadminEmailAndAdminPassword(adminEmail, adminPassword);
+	Admin_togyoho admin_togyoho =adminDao_togyoho.findByAdminEmailAndAdminPassword(adminEmail, adminPassword);
 	if(admin_togyoho==null) {
 		return null;
 	}else {
