@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>講座の変更完了</title>
-    <link rel="stylesheet" th:href="@{lesson_edit_complete.css}">
+    <link rel="stylesheet" th:href="@{/css/lesson_edit_complete.css}">
 </head>
 <body>
     <header>
         <div class="header-left"><span th:text="${adminname}"></span>、ようこそ。</div>
         <div class="header-right">
             <a href="#">情報変更</a>
-            <a href="#">ログアウト</a>
+            <a href="/admin/logout">ログアウト</a>
         </div>
         <h1>講座の変更</h1>
     </header>
@@ -29,13 +29,8 @@
 		</form>
     </main>
 
-    <footer>
-        <div class="footer-left">お問合せ</div>
-        <div class="footer-right">
-            <span>Copyright @202407-TeamA</span>
-            <a href="#">情報変更</a>
-            <a href="#">ログアウト</a>
-        </div>
-    </footer>
+	<footer>
+	    <p>Copyright©2024 Team A.</p>
+	</footer>
 </body>
 </html>

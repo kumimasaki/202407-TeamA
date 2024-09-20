@@ -44,6 +44,8 @@ nav button {
 .return{
     margin-top: 10px;
     margin-left: 300px;
+	text-decoration: none; /* 去掉链接的下划线 */
+	color: #000000;
 }
 /* 講座列表容器样式 */
 .register-section{
