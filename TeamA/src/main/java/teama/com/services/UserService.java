@@ -31,7 +31,7 @@ public class UserService {
 		}
 	}
 	
-	 public void saveUser(Users user) {
-	        usersDao.save(user);
-	    }
+//	 public void saveUser(Users user) {
+//	        usersDao.save(user);
+//	    }
 }
