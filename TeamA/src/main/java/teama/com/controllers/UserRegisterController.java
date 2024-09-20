@@ -43,17 +43,17 @@ public class UserRegisterController {
 		return "user_confirm.html";
 	}
 	
-	//　登録確認処理
-	@PostMapping("/user/confirm/process")
-	public String userConfirmProcess() {
-		return "userLogin.html";
-	}
+//	//　登録確認処理
+//	@PostMapping("/user/register/check")
+//	public String userConfirmProcess() {
+//		return "userLogin.html";
+//	}
 	
-    // 登録内容をリセットして、登録画面に戻るメソッド
-    @PostMapping("/user/confirm/reset")
-    public String resetRegistration(Model model) {
-        model.addAttribute("user", new Users()); // 空のユーザーオブジェクトを渡す
-        return "userRegister.html"; // 再度登録画面に戻る
-    }
+//    // 登録内容をリセットして、登録画面に戻るメソッド
+//    @PostMapping("/user/confirm/reset")
+//    public String resetRegistration(Model model) {
+//        model.addAttribute("user", new Users()); // 空のユーザーオブジェクトを渡す
+//        return "userRegister.html"; // 再度登録画面に戻る
+//    }
 
 }

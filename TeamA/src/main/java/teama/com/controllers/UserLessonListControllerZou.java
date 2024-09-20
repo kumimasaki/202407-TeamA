@@ -85,7 +85,7 @@ public class UserLessonListControllerZou {
 //    }
 
     // 4. ナビゲーションボタンの処理（購入履歴やプロフィール変更ページへの移動）
-    @GetMapping("/navigate")
+    @GetMapping("/navigate/test")
     public String navigateTo(@RequestParam("page") String page) {
         switch (page) {
             case "history":

@@ -54,7 +54,7 @@ public class TransactionController {
 	}
 	
 	//購入完了
-	@GetMapping("users/procedureCompleted")
+	@GetMapping("/users/procedureCompleted")
 	public String getProcedureCompletedPage(Model model) {
         // セッションを通じてユーザーログイン情報を確認
         Users user = (Users) session.getAttribute("loginUserInfo");
