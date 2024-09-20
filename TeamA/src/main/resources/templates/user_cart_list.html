@@ -13,7 +13,7 @@
 	<header>
 		<div class="header-left">
 			<div class="username">
-				<span id="username-display" th:text="${username}">Username</span>、ようこそ。
+				<span id="username-display" th:text="${userName}">Username</span>、ようこそ。
 			</div>
 		</div>
 		<div class="header-title">
@@ -26,7 +26,7 @@
 				<button onclick="location.href='/user/password/reset'">情報変更</button>
 				<button onclick="location.href='/user/logout'">ログアウト</button>
 			</nav>
-			<a class="cart-icon" th:href="@{/cart/list}"></a>
+			<a class="cart-icon" onclick="location.href='/view/cart/list'"></a>
 		</div>
 	</header>
 
@@ -50,7 +50,7 @@
 		<!-- 合計金額と支払いボタンセクション -->
 		<div class="total-price-container">
 			<p class="total-price" th:text="'合計金額：' + ${total} + '円'">合計金額</p>
-			<button class="pay-button" onclick="location.href='#'">支払い</button>
+			<button class="pay-button" onclick="location.href='/users/selectPayment'">支払い</button>
 		</div>
 	</div>
 

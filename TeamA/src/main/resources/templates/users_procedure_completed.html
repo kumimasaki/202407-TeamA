@@ -2,54 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>申込手続き完了</title>
-    <link rel="stylesheet" th:href="@{/css/users_procedure_completed.css}">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>申込手続き完了</title>
+	<link rel="stylesheet" th:href="@{/css/users_procedure_completed.css}">
 </head>
 
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <div class="header-left">
-            <div class="username">
-                <span id="username-display" th:text="${username}">Username</span>、ようこそ。
-            </div>
-        </div>
-        <div class="header-title">申し込み手続き</div>
-        <div class="header-right">
-            <nav>
-                <button onclick="location.href='/ログアウト'">講座一覧</button>
-                <button onclick="location.href='/購入履歴'">購入履歴</button>
-                <button onclick="location.href='/情報変更'">情報変更</button>
-                <button onclick="location.href='/ログアウト'">ログアウト</button>
-            </nav>
-            <div class="cart-icon" onclick="location.href='/カート'"></div>
-        </div>
-    </header>
-    <!-- メイン -->
-    <main>
-        <section class="register-section">
-            <form th:action="@{/users/procedureCompleted/process}" method="">
-                <div class="section-details">
-                    <div class="payment-methods">お支払方法選択▶</div>
-                    <div class="content_confirmation">申し込み内容確認▶</div>
-                    <div class="application_complete">申し込み完了</div>
-                </div>
-                <div class="title">
-                    <div class="information">申し込みが完了いたしました。<br>
-                        申し込み内容についてメールをご覧ください。</div>
-                </div>
-                <div class="button">
-                    <button class="btn">ホームページへ</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <!-- フッター -->
-    <footer>
-        <p>Copyright©2024 Team A.</p>
-    </footer>
+	<!-- ヘッダー -->
+	<header>
+		<div class="header-left">
+			<div class="username">
+				<span id="username-display" th:text="${username}">Username</span>、ようこそ。
+			</div>
+		</div>
+		<div class="header-title">申し込み手続き</div>
+		<div class="header-right">
+			<nav>
+				<button onclick="location.href='/user/lesson/list'">講座一覧</button>
+				<button onclick="location.href='/transaction/history'">購入履歴</button>
+				<button onclick="location.href='/user/password/reset'">情報変更</button>
+				<button onclick="location.href='/user/logout'">ログアウト</button>
+			</nav>
+			<a class="cart-icon" onclick="location.href='/view/cart/list'"></a>
+		</div>
+	</header>
+	<!-- メイン -->
+	<main>
+		<section class="register-section">
+			<div class="section-details">
+				<div class="payment-methods">お支払方法選択▶</div>
+				<div class="content_confirmation">申し込み内容確認▶</div>
+				<div class="application_complete">申し込み完了</div>
+			</div>
+			<div class="title">
+				<div class="information">申し込みが完了いたしました。<br>
+					申し込み内容についてメールをご覧ください。</div>
+			</div>
+			<div class="button">
+				<button class="btn" onclick="location.href='/user/lesson/list'">ホームページへ</button>
+			</div>
+		</section>
+	</main>
+	<!-- フッター -->
+	<footer>
+		<p>Copyright©2024 Team A.</p>
+	</footer>
 </body>
 
 </html>

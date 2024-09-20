@@ -5,8 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
+
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +19,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import jakarta.servlet.http.HttpSession;
 import teama.com.models.entity.Admin;
 import teama.com.models.entity.Lesson;
 import teama.com.services.LessonService;
@@ -57,8 +58,8 @@ public class LessonEditController {
 	// 更新処理をする
 	@PostMapping("/lesson/edit/process")
 	public String lessonUpdate(@RequestParam MultipartFile lessonImage, @RequestParam String lessonName,
-			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalDateTime endDate,
-			@RequestParam LocalDateTime startTime, @RequestParam String description, @RequestParam Long lessonId) {
+			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime endDate,
+			@RequestParam LocalTime startTime, @RequestParam String description, @RequestParam Long lessonId) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もし、admin == nullだったら、ログイン画面にリダイレクトする

@@ -42,7 +42,7 @@ nav button {
     margin-right: 20px; 
     cursor: pointer; 
     padding: 10px 20px; 
-    font-size: 10px; 
+    font-size: 16px; 
     font-weight: bold; 
     color: #000; 
 }
@@ -110,10 +110,10 @@ nav button {
 /*講座价格*/
 .price{
     font-size: 17px;
-    color: #e96363;
+    color:#000;
     align-self: flex-end;
-    margin-top: px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    margin-left: -60px;
 }
 
 /*お支払方法選択*/
@@ -138,34 +138,32 @@ nav button {
     margin-left: 60px;
 }
 
-/* ボタン全般  */
+/* ボタン共通スタイル */
 button {
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    color: #000; 
-    border: none; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #98B1D4;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+button:hover {
+    background-color: #7A91BB;
+}
+
 .button1 {
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    color: #000; 
-    border: none; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-    text-align: center;
+    text-align: center; /* 将按钮居中 */
+    margin-top: 40px; /* 与上方元素保持一定的距离 */
 }
-.btn1{
-    background-color: #80858b;
-    font-size: 10px;
-    margin-right: 20px;
+
+.button1 button {
+    margin: 0 20px; /* 两个按钮之间的距离 */
+    padding: 10px 20px; /* 按钮的内边距，调节大小 */
 }
-.btn2{
-    background-color:#98B1D4;
-}
+
 
 
 /* 页脚样式 */
@@ -174,9 +172,10 @@ footer {
     background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* 渐变背景色 */
     text-align: center; /* 页脚文本居中 */
     color: #fff; /* 页脚文本颜色为白色 */
-    position: relative; /* 相对定位 */
+    position: absolute; /* 相对定位 */
     width: 100%; /* 页脚宽度占满整个视口 */
     bottom: 0; /* 确保页脚在页面底部 */
+    font-weight: bold;
 }
 
 /* 页脚文本样式 */

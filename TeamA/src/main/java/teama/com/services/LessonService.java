@@ -1,13 +1,12 @@
 package teama.com.services;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import jakarta.persistence.Column;
 import teama.com.models.dao.LessonDao;
 import teama.com.models.entity.Lesson;
 
@@ -30,7 +29,7 @@ public class LessonService {
 	//			true
 	//			そうでない場合
 	//			false
-	public boolean createLesson(LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime,
+	public boolean createLesson(LocalDate startDate, LocalTime startTime, LocalTime finishTime,
 			String lessonName, String lessonDetail, int lessonFee, String imageName, Long adminId) {
 		if (lessonDao.findByLessonName(lessonName) == null) {
 			lessonDao.save(new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
@@ -97,9 +96,9 @@ public class LessonService {
     //trueを返す
 	public boolean lessonUpdate(Long lessonId, LocalDate startDate,
 //		@Column(columnDefinition = "TIME")
-			LocalDateTime startTime,
+			LocalTime startTime,
 //		@Column(columnDefinition = "TIME")
-			LocalDateTime finishTime, String lessonName, String lessonDetail, int lessonFee, String imageName,
+			LocalTime finishTime, String lessonName, String lessonDetail, int lessonFee, String imageName,
 			Long adminId) {
 		if (lessonId == null) {
 			return false;

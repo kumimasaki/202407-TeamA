@@ -5,12 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
 
+import jakarta.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +23,6 @@ import teama.com.models.dao.LessonDao;
 import teama.com.models.entity.Admin;
 import teama.com.models.entity.Lesson;
 import teama.com.services.LessonService;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class LessonImgEditController {
@@ -168,7 +167,7 @@ public class LessonImgEditController {
 //	        lesson.setImageName(fileName);  // 保存文件名到数据库
 	        Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 	        Long adminId = admin.getAdminId();
-	        LocalDateTime time = LocalDateTime.of(2024,1,1,0,0,0);
+	        LocalTime time = LocalTime.of(0,0,0);
 	        lessonService.saveLesson(new Lesson(lessonId,startDate, time, time, lessonName, lessonDetail, lessonFee, fileName, adminId));  // 保存 Lesson 实体
 	        
 	        // 保存成功后，将新的 imageName 返回到页面

@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 
 import jakarta.servlet.http.HttpSession;
@@ -50,8 +50,8 @@ public class LessonRegisterController {
 	// 講座の登録処理(html参照)
 	@PostMapping("/lesson/register/process")
 	public String lessonRegisterProcess(@RequestParam MultipartFile lessonImage, @RequestParam String lessonName,
-			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalDateTime endDate,
-			@RequestParam LocalDateTime startTime, @RequestParam String description) {
+			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime endDate,
+			@RequestParam LocalTime startTime, @RequestParam String description) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もし、admin==nullだったら、ログイン画面にリダイレクトする
