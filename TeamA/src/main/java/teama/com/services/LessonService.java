@@ -1,14 +1,12 @@
 package teama.com.services;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import jakarta.persistence.Column;
 import teama.com.models.dao.LessonDao;
 import teama.com.models.entity.Lesson;
 

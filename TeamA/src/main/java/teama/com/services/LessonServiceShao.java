@@ -1,7 +1,7 @@
 package teama.com.services;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,33 +16,47 @@ public class LessonServiceShao {
 	@Autowired
 	private LessonDaoShao lessonDaoShao;
 
-	public List<Lesson> selectAllLessonList(Long adminId) {
-		if (adminId == null) {
-			return null;
-		} else {
-			return lessonDaoShao.findAll();
-		}
+	public List<Lesson> selectAllLessonList() {
+		return lessonDaoShao.findAll();
 	}
 
 	// lessonの登録処理チェック
-//	public boolean createLesson(
-//			LocalDate startDate,
-//			LocalDateTime startTime,
-//			LocalDateTime finishTime,
-//			String lessonName,
-//			String lessonDetail,
-//			int lessonFee,
-//			String imageName,
-//			Long adminId) {
-//		if (lessonDaoShao.findByLessonName(lessonName) == null) {
-//			Lesson lesson = new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
-//					adminId);
-//			lessonDaoShao.save(lesson);
-//			return true;
-//		} else {
-//			return false;
-//		}
-//	}
+	public boolean createLesson(
+			LocalDate startDate,
+			LocalDateTime startTime,
+			LocalDateTime finishTime,
+			String lessonName,
+			String lessonDetail,
+			int lessonFee,
+			String imageName,
+			Long adminId) {
+		if (lessonDaoShao.findByLessonName(lessonName) == null) {
+			Lesson lesson = new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
+					adminId);
+			lessonDaoShao.save(lesson);
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public boolean createLesson(
+			LocalDate startDate,
+			LocalTime startTime,
+			LocalTime finishTime,
+			String lessonName,
+			String lessonDetail,
+			int lessonFee,
+			String imageName,
+			Long adminId) {
+		if (lessonDaoShao.findByLessonName(lessonName) == null) {
+			Lesson lesson = new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
+					adminId);
+			lessonDaoShao.save(lesson);
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	// lesson編集画面を表示する時のチェック
 	public Lesson lessonEditCheck(Long lessonId) {
