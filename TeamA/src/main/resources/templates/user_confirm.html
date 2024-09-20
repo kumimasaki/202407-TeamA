@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture Purchase Site</title>
-    <link rel="stylesheet" th:href="@{/css/user_confirm.css"> 
+    <link rel="stylesheet" th:href="@{/css/user_confirm.css}"> 
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
     <!-- ユーザー情報確認フォーム -->
     <main>
-		<form action="/user/register/check" method="post"> 
+		<form th:action="@{/user/register/check}" method="post"> 
         <div class="user-info-container">
             <label for="username">ユーザー名：</label>
             <input type="text" id="username" value="[[${userName}]]" readonly><br>

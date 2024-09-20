@@ -39,7 +39,7 @@ public class UserLoginController {
 			session.setAttribute("loginUserInfo", user);
 			mav.addObject("userEmail",userEmail);
 			mav.addObject("userPassword",userPassword);
-			mav.setViewName("redirect:/lesson/list");
+			mav.setViewName("redirect:/user/lesson/list");
 			return mav;
 		}
 	}

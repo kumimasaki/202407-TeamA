@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserLogin</title>
+    <link rel="stylesheet" th:href="@{/css/userLogin.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+  
+      
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+          
+        </div> 
+         
+        <div class="c">
+            <form class="d" th:action="@{/user/login/process}" method="post">
+                <h1>USER</h1>
+                <input name="userEmail" type="text" class="e" placeholder="EMAIL" id="userEmail">
+                <input name="userPassword" type="text" class="e" placeholder="PASSWORD" id="userPassword">
+                <!-- <a href="#" class="f">Forget your password?</a> -->
+                <button class="g">Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
