@@ -50,16 +50,16 @@ public class LessonRegisterController {
 	// 講座の登録処理(html参照)
 	@PostMapping("/lesson/register/process")
 	public String lessonRegisterProcess(@RequestParam MultipartFile lessonImage, @RequestParam String lessonName,
-			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime endDate,
-			@RequestParam LocalTime startTime, @RequestParam String description) {
+			@RequestParam int price, 
+			@RequestParam LocalDate startDate, 
+			@RequestParam LocalTime finishTime,
+			@RequestParam LocalTime startTime, 
+			@RequestParam String description) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もし、admin==nullだったら、ログイン画面にリダイレクトする
 		// そうでない場合は、画像のファイル名を取得
 		// 画像のアップロード
-		// もし、同じファイルの名前がなかったら保存
-		// 講座登録完了にリダイレクトする
-		// そうでない場合、講座登録画面にとどまります。
 		if (admin == null) {
 			return "redirect:/admin/login";
 		} else {
@@ -73,7 +73,10 @@ public class LessonRegisterController {
 				e.printStackTrace();
 			}
 			// Serviceの講座の登録処理チェック参照
-			if (lessonService.createLesson(startDate, startTime, endDate, description, lessonName, price, fileName,
+			// もし、同じファイルの名前がなかったら保存
+			// 講座登録完了にリダイレクトする
+			// そうでない場合、講座登録画面にとどまります。
+			if (lessonService.createLesson(startDate, startTime, finishTime, description, lessonName, price, fileName,
 					admin.getAdminId())) {
 				return "lesson_register_complete.html";
 			} else {

@@ -26,11 +26,9 @@
             <form th:action="@{/lesson/register/process}" method="post" enctype="multipart/form-data">
                 <div class="section-details">
                     <div class="image-container">講座画像
-                        <div class="file-upload">
-                            <a href="lesson_img_edit.html">
-                            <button class="btn2">講座画像を変更</button>
-                        </a>
-                        </div>
+						<div class="file-upload">
+						    <input type="file" name="lessonImage">
+						</div>
                     </div>
                     <div class="section-details">
                         <div class="register-section-details">

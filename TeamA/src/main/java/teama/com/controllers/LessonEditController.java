@@ -32,7 +32,7 @@ public class LessonEditController {
 	private HttpSession session;
 
 	// 編集画面の表示
-	@GetMapping("/lesson/edit{lessonId}")
+	@GetMapping("/lesson/edit/{lessonId}")
 	public String getLessonEditPage(@PathVariable Long lessonId, Model model) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
@@ -57,8 +57,8 @@ public class LessonEditController {
 
 	// 更新処理をする
 	@PostMapping("/lesson/edit/process")
-	public String lessonUpdate(@RequestParam MultipartFile lessonImage, @RequestParam String lessonName,
-			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime endDate,
+	public String lessonUpdate(@RequestParam String imageName, @RequestParam String lessonName,
+			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime finishTime,
 			@RequestParam LocalTime startTime, @RequestParam String description, @RequestParam Long lessonId) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
@@ -70,15 +70,15 @@ public class LessonEditController {
 		if (admin == null) {
 			return "redirect:/admin/login";
 		} else {
-			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
-					+ lessonImage.getOriginalFilename();
-			try {
-				Files.copy(lessonImage.getInputStream(), Path.of("src/main/resources/static/lesson-img/" + fileName));
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			if (lessonService.lessonUpdate(lessonId, startDate, startTime, endDate, description, lessonName, price,
-					fileName, admin.getAdminId())) {
+//			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
+//					+ imageName.getOriginalFilename();
+//			try {
+//				Files.copy(lessonImage.getInputStream(), Path.of("src/main/resources/static/lesson-img/" + fileName));
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+			if (lessonService.lessonUpdate(lessonId, startDate, startTime, finishTime, description, lessonName, price,
+					imageName, admin.getAdminId())) {
 				return "lesson_edit_complete.html";
 			} else {
 				return "redirect:/lesson/edit";
