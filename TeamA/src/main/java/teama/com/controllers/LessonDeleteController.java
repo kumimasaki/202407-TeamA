@@ -27,7 +27,7 @@ public class LessonDeleteController {
 		if (admin == null) {
 			return "redirect:/admin/login";
 		} else {
-			// もしdeleteByLessonの結果がtrueの時に、講座削除完了に遷移する
+			// もしdeleteByLessonの結果がtrueの時に、lesson_delete_complete.htmlを遷移する
 			// そうでない場合、 編集画面にリダイレクトする
 			if (lessonService.deleteByLesson(lessonId)) {
 				return "lesson_delete_complete.html";

@@ -20,21 +20,23 @@
         </nav>
     </header>
     <main>
-        <div class="return">>>講座一覧に戻る</div>
+        <div><a th:href="@{/lesson/list}" class="return">>>講座一覧に戻る</a></div>
         <section class="register-section">
-			<div class="image-container">講座画像
-			    <div class="file-upload">
-					<!--a href="lesson_img_edit.html"-->
-			       <!--button class="btn2">講座画像を変更</button-->
-				   <button class="btn2" th:attr="onClick='location.href=\''+'/lesson/image/change/'+${lesson.lessonId}+'\''">講座画像を変更</button>
-			    </div>
-			</div>
+            <div class="image-container">講座画像
+                <div class="file-upload">
+                    <!--a href="lesson_img_edit.html"-->
+                    <!--button class="btn2">講座画像を変更</button-->
+                    <button class="btn2"
+                        th:attr="onClick='location.href=\''+'/lesson/image/change/'+${lesson.lessonId}+'\''">講座画像を変更</button>
+                </div>
+            </div>
             <form th:action="@{/lesson/edit/process}" method="post" enctype="multipart/form-data">
                 <div class="section-details">
                     <div class="section-details">
                         <div class="register-section-details">
                             <label class="lesson-name" for="lesson-name"> 講座名:</label>
-                            <input type="text" name="lessonName" placeholder="既に登録している内容" th:value="${lesson.lessonName}">
+                            <input type="text" name="lessonName" placeholder="既に登録している内容"
+                                th:value="${lesson.lessonName}">
                         </div>
                     </div>
                     <div class="register-section-details">
@@ -44,7 +46,7 @@
                         </div>
                         <div class="register-section-details_flex">
                             <label class="start_date" for="start_date">開始日:</label>
-                            <input type="date" name="startDate" placeholder="既に登録している内容"  th:value="${lesson.startDate}">
+                            <input type="date" name="startDate" placeholder="既に登録している内容" th:value="${lesson.startDate}">
                         </div>
                         <!--div class="register-section-details_flex">
                             <label class="end_date" for="end_date">終了日:</label>
@@ -56,22 +58,26 @@
                         </div>
                         <div class="register-section-details_flex">
                             <label class="lesson_time" for="lesson_time">レッスン終了時間:</label>
-                            <input type="time" name="finishTime" placeholder="既に登録している内容" th:value="${lesson.finishTime}">
+                            <input type="time" name="finishTime" placeholder="既に登録している内容"
+                                th:value="${lesson.finishTime}">
                         </div>
                         <div class="register-section-details_flex">
                             <div class="description">講座の情報
-                                <textarea name="description" placeholder="講座の情報を入力してください。" th:text="${lesson.lessonDetail}"></textarea>
+                                <textarea name="description" placeholder="講座の情報を入力してください。"
+                                    th:text="${lesson.lessonDetail}"></textarea>
                             </div>
                         </div>
-                        <div class="button">
-                            <input type="hidden" name="button" th:value="${lesson.lessonId}">
-                            <button class="btn" onclick="history.back();" type="button">保存せずに戻る</button>
-                            <button class="btn">変更を保存</button>
-                            <input type="hidden" name="lessonId" th:value="${lesson.lessonId}">
-							<input type="hidden" name="imageName" th:value="${lesson.imageName}">
-                            <button class="btn_delete">講座を削除</button>
-                        </div>
                     </div>
+                </div>
+            </form>
+            <form th:action="@{/lesson/delete}" method="post">
+                <div class="button">
+                    <input type="hidden" name="button" th:value="${lesson.lessonId}">
+                    <button class="btn" onclick="history.back();" type="button">保存せずに戻る</button>
+                    <input type="hidden" name="lessonId" th:value="${lesson.lessonId}">
+                    <button class="btn">変更を保存</button>
+                    <input type="hidden" name="lessonId" th:value="${lesson.lessonId}">
+                    <button class="btn_delete">講座を削除</button>
                 </div>
             </form>
         </section>

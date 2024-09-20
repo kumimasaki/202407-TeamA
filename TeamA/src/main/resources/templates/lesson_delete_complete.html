@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="header-left"><span th:text="${adminname}"></span>、ようこそ。</div>
+        <div class="header-left">
+			<span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
+		</div>
         <div class="header-right">
             <a href="#">情報変更</a>
             <a href="/admin/logout">ログアウト</a>
@@ -21,7 +23,7 @@
         <div class="main-content">
             <h4>講座の削除が完了しました</h4>
             <div class="buttons">
-                <a href="#" class="btn-back">講座一覧へ戻る</a>
+                <a href="/lesson/list" class="btn-back">講座一覧へ戻る</a>
             </div>
         </div>
 		</form>
