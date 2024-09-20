@@ -14,14 +14,16 @@ public class Admin {
 	private String adminName;
 	private String adminEmail;
 	private String adminPassword;
+	private String adminConfirmPassword;
 
 	public Admin() {
 	}
 
-	public Admin(String adminName, String adminEmail, String adminPassword) {
+	public Admin(String adminName, String adminEmail, String adminPassword, String adminConfirmPassword) {
 		this.adminName = adminName;
 		this.adminEmail = adminEmail;
 		this.adminPassword = adminPassword;
+		this.adminConfirmPassword = adminConfirmPassword;
 	}
 
 	public Long getAdminId() {
@@ -54,6 +56,14 @@ public class Admin {
 
 	public void setAdminPassword(String adminPassword) {
 		this.adminPassword = adminPassword;
+	}
+
+	public String getAdminConfirmPassword() {
+		return adminConfirmPassword;
+	}
+
+	public void setAdminConfirmPassword(String adminConfirmPassword) {
+		this.adminConfirmPassword = adminConfirmPassword;
 	}
 
 }

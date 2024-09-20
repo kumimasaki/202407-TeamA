@@ -168,7 +168,7 @@ public class LessonImgEditController {
 //	        lesson.setImageName(fileName);  // 保存文件名到数据库
 	        Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 	        Long adminId = admin.getAdminId();
-	        LocalDateTime time = LocalDateTime.of(2024,1,1,0,0,0);
+	        LocalTime time = LocalTime.of(0,0,0);
 	        lessonService.saveLesson(new Lesson(lessonId,startDate, time, time, lessonName, lessonDetail, lessonFee, fileName, adminId));  // 保存 Lesson 实体
 	        
 	        // 保存成功后，将新的 imageName 返回到页面

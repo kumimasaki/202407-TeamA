@@ -2,6 +2,7 @@ package teama.com.models.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,8 +15,8 @@ public class Lesson {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long lessonId;
 	private LocalDate startDate;
-	private LocalDateTime startTime;
-	private LocalDateTime finishTime;
+	private LocalTime startTime;
+	private LocalTime finishTime;
 	private String lessonName;
 	private String lessonDetail;
 	private int lessonFee;
@@ -25,7 +26,7 @@ public class Lesson {
 	public Lesson() {
 	}
 
-	public Lesson(LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime, String lessonName,
+	public Lesson(LocalDate startDate, LocalTime startTime, LocalTime finishTime, String lessonName,
 			String lessonDetail, int lessonFee, String imageName, Long adminId) {
 		this.startDate = startDate;
 		this.startTime = startTime;
@@ -36,7 +37,7 @@ public class Lesson {
 		this.imageName = imageName;
 		this.adminId = adminId;
 	}
-	public Lesson(Long lessonId, LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime, String lessonName,
+	public Lesson(Long lessonId, LocalDate startDate, LocalTime startTime, LocalTime finishTime, String lessonName,
 			String lessonDetail, int lessonFee, String imageName, Long adminId) {
 		this.lessonId = lessonId;
 		this.startDate = startDate;
@@ -65,19 +66,19 @@ public class Lesson {
 		this.startDate = startDate;
 	}
 
-	public LocalDateTime getStartTime() {
+	public LocalTime getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(LocalDateTime startTime) {
+	public void setStartTime(LocalTime startTime) {
 		this.startTime = startTime;
 	}
 
-	public LocalDateTime getFinishTime() {
+	public LocalTime getFinishTime() {
 		return finishTime;
 	}
 
-	public void setFinishTime(LocalDateTime finishTime) {
+	public void setFinishTime(LocalTime finishTime) {
 		this.finishTime = finishTime;
 	}
 

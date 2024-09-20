@@ -2,6 +2,8 @@ package teama.com.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import jakarta.servlet.http.HttpSession;
@@ -17,8 +19,8 @@ public class LessonDeleteController {
 	@Autowired
 	private HttpSession session;
 
-	@PostMapping("/lesson/delete")
-	public String deleteByLesson(Long lessonId) {
+	@GetMapping("/lesson/delete/{lessonId}")
+	public String deleteByLesson(@PathVariable Long lessonId) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もしadmin==null ログイン画面にリダイレクトする
@@ -30,7 +32,7 @@ public class LessonDeleteController {
 			if (lessonService.deleteByLesson(lessonId)) {
 				return "lesson_delete_complete.html";
 			} else {
-				return "redirect:/lesson/edit" + lessonId;
+				return "redirect:/lesson/edit/" + lessonId;
 			}
 		}
 	}
