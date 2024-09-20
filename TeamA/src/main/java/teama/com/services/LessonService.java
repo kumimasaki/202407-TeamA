@@ -123,7 +123,7 @@ public class LessonService {
 	// もし、コントローラークラスから受け取ったlessonIdがnull
 	// 削除できないことfalse
 	// 削除できる場合、deleteByLessonIdを使って削除処理
-	// true lesson_delete_complete.htmlを遷移する
+	// true 
 	public boolean deleteByLesson(Long lessonId) {
 		if (lessonId == null) {
 			return false;

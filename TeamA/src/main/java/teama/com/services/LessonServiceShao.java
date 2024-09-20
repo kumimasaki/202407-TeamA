@@ -25,24 +25,24 @@ public class LessonServiceShao {
 	}
 
 	// lessonの登録処理チェック
-	public boolean createLesson(
-			LocalDate startDate,
-			LocalDateTime startTime,
-			LocalDateTime finishTime,
-			String lessonName,
-			String lessonDetail,
-			int lessonFee,
-			String imageName,
-			Long adminId) {
-		if (lessonDaoShao.findByLessonName(lessonName) == null) {
-			Lesson lesson = new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
-					adminId);
-			lessonDaoShao.save(lesson);
-			return true;
-		} else {
-			return false;
-		}
-	}
+//	public boolean createLesson(
+//			LocalDate startDate,
+//			LocalDateTime startTime,
+//			LocalDateTime finishTime,
+//			String lessonName,
+//			String lessonDetail,
+//			int lessonFee,
+//			String imageName,
+//			Long adminId) {
+//		if (lessonDaoShao.findByLessonName(lessonName) == null) {
+//			Lesson lesson = new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
+//					adminId);
+//			lessonDaoShao.save(lesson);
+//			return true;
+//		} else {
+//			return false;
+//		}
+//	}
 
 	// lesson編集画面を表示する時のチェック
 	public Lesson lessonEditCheck(Long lessonId) {
