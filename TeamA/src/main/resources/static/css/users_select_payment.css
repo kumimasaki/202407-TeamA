@@ -74,6 +74,10 @@ nav button {
     color: #80858b;
 }
 
+li{
+	list-style: none;
+}
+
 /*<!-- 商品图片区域 -->*/
 .item{
     display: flex; /* 使容器内容采用弹性布局 */
@@ -100,6 +104,13 @@ nav button {
     margin-top: 22px;
     margin-left: 20px;
 }
+
+/* 講座图片上传容器样式 */
+img{
+	width: 150px;/* 设置宽度 */
+	height: 150px;/* 设置高度 */
+}
+
 /* 講座名 */
 .lecture-name{
     font-size: 25px; /* 设置标题字体大小 */

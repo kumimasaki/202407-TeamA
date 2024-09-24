@@ -2154,3 +2154,589 @@ Caused by: org.postgresql.util.PSQLException: ERROR: 列"start_time"は型timest
 2024-09-20T11:52:07.755+09:00  INFO 3064 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-09-20T11:52:07.755+09:00  INFO 3064 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-09-20T11:52:07.757+09:00  INFO 3064 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T10:32:39.041+09:00  INFO 1264 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 1264 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T10:32:39.043+09:00  INFO 1264 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T10:32:39.731+09:00  INFO 1264 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T10:32:39.797+09:00  INFO 1264 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2024-09-24T10:32:40.331+09:00  INFO 1264 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T10:32:40.347+09:00  INFO 1264 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T10:32:40.348+09:00  INFO 1264 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T10:32:40.408+09:00  INFO 1264 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T10:32:40.408+09:00  INFO 1264 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1324 ms
+2024-09-24T10:32:40.586+09:00  INFO 1264 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T10:32:40.661+09:00  INFO 1264 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T10:32:40.700+09:00  INFO 1264 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T10:32:41.164+09:00  INFO 1264 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T10:32:41.200+09:00  INFO 1264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T10:32:42.139+09:00  INFO 1264 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e98b933
+2024-09-24T10:32:42.142+09:00  INFO 1264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T10:32:42.702+09:00  WARN 1264 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T10:32:44.073+09:00  INFO 1264 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T10:32:44.407+09:00  INFO 1264 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T10:32:44.793+09:00  WARN 1264 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T10:32:45.773+09:00  INFO 1264 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T10:32:45.787+09:00  INFO 1264 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 7.127 seconds (process running for 8.335)
+2024-09-24T10:33:12.357+09:00  INFO 1264 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T10:33:12.358+09:00  INFO 1264 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T10:33:12.359+09:00  INFO 1264 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T10:34:13.837+09:00  INFO 1264 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T10:34:13.846+09:00  INFO 1264 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T10:34:13.848+09:00  INFO 1264 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T10:34:13.853+09:00  INFO 1264 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T15:56:08.012+09:00  INFO 2528 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 2528 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T15:56:08.014+09:00  INFO 2528 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:56:08.655+09:00  INFO 2528 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T15:56:08.716+09:00  INFO 2528 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2024-09-24T15:56:09.164+09:00  INFO 2528 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:56:09.179+09:00  INFO 2528 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:56:09.180+09:00  INFO 2528 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:56:09.237+09:00  INFO 2528 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:56:09.237+09:00  INFO 2528 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1176 ms
+2024-09-24T15:56:09.412+09:00  INFO 2528 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T15:56:09.481+09:00  INFO 2528 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T15:56:09.520+09:00  INFO 2528 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T15:56:09.859+09:00  INFO 2528 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T15:56:09.886+09:00  INFO 2528 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:56:10.514+09:00  INFO 2528 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@429e7914
+2024-09-24T15:56:10.516+09:00  INFO 2528 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:56:10.713+09:00  WARN 2528 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T15:56:11.825+09:00  INFO 2528 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T15:56:12.097+09:00  INFO 2528 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T15:56:12.436+09:00  WARN 2528 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T15:56:12.835+09:00  INFO 2528 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:56:12.841+09:00  INFO 2528 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 5.264 seconds (process running for 6.371)
+2024-09-24T15:56:27.524+09:00  INFO 2528 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:56:27.525+09:00  INFO 2528 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:56:27.526+09:00  INFO 2528 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T15:56:31.445+09:00 ERROR 2528 --- [TeamA] [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "users_select_payment.html": An error happened during template parsing (template: "class path resource [templates/users_select_payment.html]" - line 53, col 6)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/users_select_payment.html]" - line 53, col 6)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.attoparser.ParseException: (Line = 53, Column = 6) Incomplete structure: "<div class="circle-container" name="paymentMethod"">
+						<input type="radio" id="option1" name="circleOption" class="circle-radio" />
+						<label for="option1" class="circle-label">当日現金支払い(無料講座の場合はこちらを選択する)</label><br>
+
+						<input type="radio" id="option2" name="circleOption" class="circle-radio" />
+						<label for="option2" class="circle-label">銀行振込</label><br>
+
+						<input type="radio" id="option3" name="circleOption" class="circle-radio" />
+						<label for="option2" class="circle-label">クレジットカード決済</label><br>
+					</div>
+				</div>
+				<div class="button">
+					<button class="btn">申し込み内容確認</button>
+				</div>
+			</form>
+		</section>
+	</main>
+	<!-- フッター -->
+	<footer>
+		<p>Copyright©2024 Team A.</p>
+	</footer>
+</body>
+
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 48 common frames omitted
+
+2024-09-24T15:56:31.451+09:00 ERROR 2528 --- [TeamA] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/users_select_payment.html]" - line 53, col 6)] with root cause
+
+org.attoparser.ParseException: (Line = 53, Column = 6) Incomplete structure: "<div class="circle-container" name="paymentMethod"">
+						<input type="radio" id="option1" name="circleOption" class="circle-radio" />
+						<label for="option1" class="circle-label">当日現金支払い(無料講座の場合はこちらを選択する)</label><br>
+
+						<input type="radio" id="option2" name="circleOption" class="circle-radio" />
+						<label for="option2" class="circle-label">銀行振込</label><br>
+
+						<input type="radio" id="option3" name="circleOption" class="circle-radio" />
+						<label for="option2" class="circle-label">クレジットカード決済</label><br>
+					</div>
+				</div>
+				<div class="button">
+					<button class="btn">申し込み内容確認</button>
+				</div>
+			</form>
+		</section>
+	</main>
+	<!-- フッター -->
+	<footer>
+		<p>Copyright©2024 Team A.</p>
+	</footer>
+</body>
+
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-09-24T15:57:16.346+09:00  INFO 2528 --- [TeamA] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T15:57:16.354+09:00  INFO 2528 --- [TeamA] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T15:57:16.356+09:00  INFO 2528 --- [TeamA] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T15:57:16.359+09:00  INFO 2528 --- [TeamA] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T15:57:35.267+09:00  INFO 9928 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 9928 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T15:57:35.269+09:00  INFO 9928 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:57:35.800+09:00  INFO 9928 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T15:57:35.860+09:00  INFO 9928 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2024-09-24T15:57:36.281+09:00  INFO 9928 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:57:36.295+09:00  INFO 9928 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:57:36.296+09:00  INFO 9928 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:57:36.351+09:00  INFO 9928 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:57:36.351+09:00  INFO 9928 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+2024-09-24T15:57:36.489+09:00  INFO 9928 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T15:57:36.542+09:00  INFO 9928 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T15:57:36.571+09:00  INFO 9928 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T15:57:36.828+09:00  INFO 9928 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T15:57:36.850+09:00  INFO 9928 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:57:37.103+09:00  INFO 9928 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@cae2a97
+2024-09-24T15:57:37.106+09:00  INFO 9928 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:57:37.138+09:00  WARN 9928 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T15:57:37.950+09:00  INFO 9928 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T15:57:37.985+09:00  INFO 9928 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T15:57:38.294+09:00  WARN 9928 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T15:57:38.661+09:00  INFO 9928 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:57:38.668+09:00  INFO 9928 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.746 seconds (process running for 4.537)
+2024-09-24T15:57:44.460+09:00  INFO 9928 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:57:44.460+09:00  INFO 9928 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:57:44.461+09:00  INFO 9928 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T15:58:21.115+09:00  INFO 9928 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T15:58:21.123+09:00  INFO 9928 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T15:58:21.125+09:00  INFO 9928 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T15:58:21.129+09:00  INFO 9928 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T15:58:56.970+09:00  INFO 15348 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 15348 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T15:58:56.973+09:00  INFO 15348 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:58:57.479+09:00  INFO 15348 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T15:58:57.541+09:00  INFO 15348 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2024-09-24T15:58:57.943+09:00  INFO 15348 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:58:57.955+09:00  INFO 15348 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:58:57.955+09:00  INFO 15348 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:58:58.006+09:00  INFO 15348 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:58:58.006+09:00  INFO 15348 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2024-09-24T15:58:58.143+09:00  INFO 15348 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T15:58:58.193+09:00  INFO 15348 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T15:58:58.221+09:00  INFO 15348 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T15:58:58.473+09:00  INFO 15348 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T15:58:58.495+09:00  INFO 15348 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:58:58.640+09:00  INFO 15348 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@782e6b40
+2024-09-24T15:58:58.641+09:00  INFO 15348 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:58:58.673+09:00  WARN 15348 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T15:58:59.451+09:00  INFO 15348 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T15:58:59.486+09:00  INFO 15348 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T15:58:59.787+09:00  WARN 15348 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T15:59:00.115+09:00  INFO 15348 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:59:00.122+09:00  INFO 15348 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.488 seconds (process running for 4.143)
+2024-09-24T15:59:04.793+09:00  INFO 15348 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:59:04.793+09:00  INFO 15348 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:59:04.794+09:00  INFO 15348 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:00:58.305+09:00  INFO 15348 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:00:58.313+09:00  INFO 15348 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:00:58.315+09:00  INFO 15348 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:00:58.319+09:00  INFO 15348 --- [TeamA] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:01:08.346+09:00  INFO 9656 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 9656 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:01:08.349+09:00  INFO 9656 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:01:08.873+09:00  INFO 9656 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:01:08.936+09:00  INFO 9656 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:01:09.340+09:00  INFO 9656 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:01:09.361+09:00  INFO 9656 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:01:09.361+09:00  INFO 9656 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:01:09.424+09:00  INFO 9656 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:01:09.425+09:00  INFO 9656 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1036 ms
+2024-09-24T16:01:09.578+09:00  INFO 9656 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:01:09.627+09:00  INFO 9656 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:01:09.657+09:00  INFO 9656 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:01:09.944+09:00  INFO 9656 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:01:09.967+09:00  INFO 9656 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:01:10.112+09:00  INFO 9656 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@429e7914
+2024-09-24T16:01:10.113+09:00  INFO 9656 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:01:10.145+09:00  WARN 9656 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:01:10.953+09:00  INFO 9656 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:01:10.997+09:00  INFO 9656 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:01:11.310+09:00  WARN 9656 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:01:11.649+09:00  INFO 9656 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:01:11.656+09:00  INFO 9656 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.648 seconds (process running for 4.282)
+2024-09-24T16:01:11.831+09:00  INFO 9656 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:01:11.831+09:00  INFO 9656 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:01:11.832+09:00  INFO 9656 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:06:03.594+09:00  INFO 9656 --- [TeamA] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:06:03.602+09:00  INFO 9656 --- [TeamA] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:06:03.604+09:00  INFO 9656 --- [TeamA] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:06:03.608+09:00  INFO 9656 --- [TeamA] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:06:14.376+09:00  INFO 8220 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 8220 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:06:14.378+09:00  INFO 8220 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:06:14.888+09:00  INFO 8220 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:06:14.947+09:00  INFO 8220 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:06:15.346+09:00  INFO 8220 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:06:15.359+09:00  INFO 8220 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:06:15.359+09:00  INFO 8220 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:06:15.409+09:00  INFO 8220 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:06:15.410+09:00  INFO 8220 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 990 ms
+2024-09-24T16:06:15.545+09:00  INFO 8220 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:06:15.591+09:00  INFO 8220 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:06:15.622+09:00  INFO 8220 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:06:15.873+09:00  INFO 8220 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:06:15.897+09:00  INFO 8220 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:06:16.038+09:00  INFO 8220 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c815fdc
+2024-09-24T16:06:16.040+09:00  INFO 8220 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:06:16.072+09:00  WARN 8220 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:06:16.845+09:00  INFO 8220 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:06:16.884+09:00  INFO 8220 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:06:17.183+09:00  WARN 8220 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:06:17.518+09:00  INFO 8220 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:06:17.524+09:00  INFO 8220 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.488 seconds (process running for 4.152)
+2024-09-24T16:06:21.319+09:00  INFO 8220 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:06:21.320+09:00  INFO 8220 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:06:21.321+09:00  INFO 8220 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:06:21.341+09:00  WARN 8220 --- [TeamA] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:06:44.852+09:00  WARN 8220 --- [TeamA] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:07:47.837+09:00  WARN 8220 --- [TeamA] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:07:53.549+09:00  INFO 8220 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:07:53.557+09:00  INFO 8220 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:07:53.559+09:00  INFO 8220 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:07:53.562+09:00  INFO 8220 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:08:09.822+09:00  INFO 13916 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 13916 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:08:09.824+09:00  INFO 13916 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:08:10.329+09:00  INFO 13916 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:08:10.391+09:00  INFO 13916 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:08:10.797+09:00  INFO 13916 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:08:10.811+09:00  INFO 13916 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:08:10.811+09:00  INFO 13916 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:08:10.861+09:00  INFO 13916 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:08:10.861+09:00  INFO 13916 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2024-09-24T16:08:10.999+09:00  INFO 13916 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:08:11.048+09:00  INFO 13916 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:08:11.078+09:00  INFO 13916 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:08:11.333+09:00  INFO 13916 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:08:11.357+09:00  INFO 13916 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:08:11.602+09:00  INFO 13916 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3eec8583
+2024-09-24T16:08:11.604+09:00  INFO 13916 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:08:11.637+09:00  WARN 13916 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:08:12.434+09:00  INFO 13916 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:08:12.473+09:00  INFO 13916 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:08:12.772+09:00  WARN 13916 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:08:13.096+09:00  INFO 13916 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:08:13.102+09:00  INFO 13916 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.628 seconds (process running for 4.275)
+2024-09-24T16:08:24.490+09:00  INFO 13916 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:08:24.491+09:00  INFO 13916 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:08:24.492+09:00  INFO 13916 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:11:20.492+09:00  WARN 13916 --- [TeamA] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'circleOption' for method parameter type String is not present]
+2024-09-24T16:19:10.465+09:00  INFO 18264 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 18264 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:19:10.467+09:00  INFO 18264 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:19:11.106+09:00  INFO 18264 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:19:11.176+09:00  INFO 18264 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:19:11.676+09:00  INFO 18264 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:19:11.695+09:00  INFO 18264 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:19:11.695+09:00  INFO 18264 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:19:11.760+09:00  INFO 18264 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:19:11.761+09:00  INFO 18264 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1251 ms
+2024-09-24T16:19:11.900+09:00  INFO 18264 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:19:11.959+09:00  INFO 18264 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:19:11.992+09:00  INFO 18264 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:19:12.304+09:00  INFO 18264 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:19:12.334+09:00  INFO 18264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:19:12.680+09:00  INFO 18264 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@258a8584
+2024-09-24T16:19:12.683+09:00  INFO 18264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:19:12.756+09:00  WARN 18264 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:19:13.726+09:00  INFO 18264 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:19:13.785+09:00  INFO 18264 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:19:14.113+09:00  WARN 18264 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:19:14.505+09:00  WARN 18264 --- [TeamA] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-24T16:19:14.507+09:00  INFO 18264 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:19:14.509+09:00  INFO 18264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:19:14.512+09:00  INFO 18264 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:19:14.523+09:00  INFO 18264 --- [TeamA] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-24T16:19:14.543+09:00 ERROR 18264 --- [TeamA] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-24T16:19:38.993+09:00  INFO 13916 --- [TeamA] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:19:39.003+09:00  INFO 13916 --- [TeamA] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:19:39.005+09:00  INFO 13916 --- [TeamA] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:19:39.011+09:00  INFO 13916 --- [TeamA] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:19:50.383+09:00  INFO 11748 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 11748 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:19:50.386+09:00  INFO 11748 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:19:50.957+09:00  INFO 11748 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:19:51.018+09:00  INFO 11748 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:19:51.462+09:00  INFO 11748 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:19:51.478+09:00  INFO 11748 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:19:51.478+09:00  INFO 11748 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:19:51.536+09:00  INFO 11748 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:19:51.536+09:00  INFO 11748 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1107 ms
+2024-09-24T16:19:51.687+09:00  INFO 11748 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:19:51.741+09:00  INFO 11748 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:19:51.775+09:00  INFO 11748 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:19:52.057+09:00  INFO 11748 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:19:52.090+09:00  INFO 11748 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:19:52.354+09:00  INFO 11748 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b1a901d
+2024-09-24T16:19:52.355+09:00  INFO 11748 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:19:52.391+09:00  WARN 11748 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:19:53.261+09:00  INFO 11748 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:19:53.305+09:00  INFO 11748 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:19:53.639+09:00  WARN 11748 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:19:54.021+09:00  INFO 11748 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:19:54.028+09:00  INFO 11748 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 4.023 seconds (process running for 4.73)
+2024-09-24T16:20:05.358+09:00  INFO 11748 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:20:05.358+09:00  INFO 11748 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:20:05.359+09:00  INFO 11748 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:25:12.157+09:00  INFO 11748 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:25:12.170+09:00  INFO 11748 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:25:12.172+09:00  INFO 11748 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:25:12.177+09:00  INFO 11748 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:25:22.524+09:00  INFO 11204 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 11204 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:25:22.526+09:00  INFO 11204 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:25:23.084+09:00  INFO 11204 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:25:23.149+09:00  INFO 11204 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:25:23.596+09:00  INFO 11204 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:25:23.612+09:00  INFO 11204 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:25:23.613+09:00  INFO 11204 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:25:23.679+09:00  INFO 11204 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:25:23.680+09:00  INFO 11204 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+2024-09-24T16:25:23.819+09:00  INFO 11204 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:25:23.872+09:00  INFO 11204 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:25:23.906+09:00  INFO 11204 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:25:24.185+09:00  INFO 11204 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:25:24.212+09:00  INFO 11204 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:25:24.369+09:00  INFO 11204 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@258a8584
+2024-09-24T16:25:24.371+09:00  INFO 11204 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:25:24.406+09:00  WARN 11204 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:25:25.266+09:00  INFO 11204 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:25:25.308+09:00  INFO 11204 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:25:25.659+09:00  WARN 11204 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:25:26.034+09:00  INFO 11204 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:25:26.040+09:00  INFO 11204 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.881 seconds (process running for 4.595)
+2024-09-24T16:25:31.289+09:00  INFO 11204 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:25:31.289+09:00  INFO 11204 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:25:31.291+09:00  INFO 11204 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:25:31.312+09:00  WARN 11204 --- [TeamA] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:25:52.414+09:00  WARN 11204 --- [TeamA] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:26:59.496+09:00  INFO 11204 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:26:59.504+09:00  INFO 11204 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:26:59.506+09:00  INFO 11204 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:26:59.510+09:00  INFO 11204 --- [TeamA] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:27:11.358+09:00  INFO 18576 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 18576 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:27:11.360+09:00  INFO 18576 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:27:11.919+09:00  INFO 18576 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:27:11.984+09:00  INFO 18576 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:27:12.439+09:00  INFO 18576 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:27:12.452+09:00  INFO 18576 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:27:12.452+09:00  INFO 18576 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:27:12.507+09:00  INFO 18576 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:27:12.507+09:00  INFO 18576 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2024-09-24T16:27:12.660+09:00  INFO 18576 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:27:12.712+09:00  INFO 18576 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:27:12.746+09:00  INFO 18576 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:27:13.023+09:00  INFO 18576 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:27:13.048+09:00  INFO 18576 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:27:13.198+09:00  INFO 18576 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@466fedfa
+2024-09-24T16:27:13.199+09:00  INFO 18576 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:27:13.235+09:00  WARN 18576 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:27:14.088+09:00  INFO 18576 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:27:14.133+09:00  INFO 18576 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:27:14.467+09:00  WARN 18576 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:27:14.833+09:00  INFO 18576 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:27:14.842+09:00  INFO 18576 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.859 seconds (process running for 4.553)
+2024-09-24T16:27:22.864+09:00  INFO 18576 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:27:22.865+09:00  INFO 18576 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:27:22.866+09:00  INFO 18576 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:27:22.890+09:00  WARN 18576 --- [TeamA] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T16:37:34.052+09:00  INFO 18576 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:37:34.060+09:00  INFO 18576 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:37:34.062+09:00  INFO 18576 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:37:34.065+09:00  INFO 18576 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:38:01.936+09:00  INFO 11892 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 11892 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:38:01.939+09:00  INFO 11892 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:38:02.456+09:00  INFO 11892 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:38:02.517+09:00  INFO 11892 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:38:02.923+09:00  INFO 11892 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:38:02.936+09:00  INFO 11892 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:38:02.936+09:00  INFO 11892 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:38:02.986+09:00  INFO 11892 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:38:02.987+09:00  INFO 11892 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2024-09-24T16:38:03.124+09:00  INFO 11892 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:38:03.172+09:00  INFO 11892 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:38:03.201+09:00  INFO 11892 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:38:03.453+09:00  INFO 11892 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:38:03.490+09:00  INFO 11892 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:38:03.633+09:00  INFO 11892 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@312a738d
+2024-09-24T16:38:03.634+09:00  INFO 11892 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:38:03.667+09:00  WARN 11892 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:38:04.445+09:00  INFO 11892 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:38:04.482+09:00  INFO 11892 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:38:04.801+09:00  WARN 11892 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:38:05.128+09:00  INFO 11892 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:38:05.135+09:00  INFO 11892 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.538 seconds (process running for 4.206)
+2024-09-24T16:40:36.586+09:00  INFO 11892 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:40:36.586+09:00  INFO 11892 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:40:36.588+09:00  INFO 11892 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:43:08.673+09:00  INFO 11892 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:43:08.681+09:00  INFO 11892 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:43:08.683+09:00  INFO 11892 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:43:08.687+09:00  INFO 11892 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:44:32.837+09:00  INFO 8028 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 8028 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:44:32.839+09:00  INFO 8028 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:44:33.356+09:00  INFO 8028 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:44:33.414+09:00  INFO 8028 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:44:33.817+09:00  INFO 8028 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:44:33.830+09:00  INFO 8028 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:44:33.830+09:00  INFO 8028 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:44:33.880+09:00  INFO 8028 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:44:33.880+09:00  INFO 8028 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 999 ms
+2024-09-24T16:44:34.015+09:00  INFO 8028 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:44:34.064+09:00  INFO 8028 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:44:34.092+09:00  INFO 8028 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:44:34.354+09:00  INFO 8028 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:44:34.378+09:00  INFO 8028 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:44:34.521+09:00  INFO 8028 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59127611
+2024-09-24T16:44:34.523+09:00  INFO 8028 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:44:34.556+09:00  WARN 8028 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:44:35.380+09:00  INFO 8028 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:44:35.432+09:00  INFO 8028 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:44:35.775+09:00  WARN 8028 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:44:36.135+09:00  INFO 8028 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:44:36.142+09:00  INFO 8028 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.646 seconds (process running for 4.295)
+2024-09-24T16:44:41.456+09:00  INFO 8028 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:44:41.456+09:00  INFO 8028 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:44:41.457+09:00  INFO 8028 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:45:08.681+09:00  WARN 8028 --- [TeamA] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'circleOption' for method parameter type String is not present]
+2024-09-24T16:48:05.551+09:00  INFO 8028 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:48:05.558+09:00  INFO 8028 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:48:05.560+09:00  INFO 8028 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:48:05.564+09:00  INFO 8028 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-24T16:48:48.680+09:00  INFO 13452 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 13452 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-24T16:48:48.683+09:00  INFO 13452 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:48:49.202+09:00  INFO 13452 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24T16:48:49.256+09:00  INFO 13452 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2024-09-24T16:48:49.657+09:00  INFO 13452 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:48:49.670+09:00  INFO 13452 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:48:49.670+09:00  INFO 13452 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:48:49.720+09:00  INFO 13452 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:48:49.720+09:00  INFO 13452 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2024-09-24T16:48:49.860+09:00  INFO 13452 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24T16:48:49.909+09:00  INFO 13452 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24T16:48:49.939+09:00  INFO 13452 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-24T16:48:50.191+09:00  INFO 13452 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24T16:48:50.214+09:00  INFO 13452 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:48:50.357+09:00  INFO 13452 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@280484c7
+2024-09-24T16:48:50.359+09:00  INFO 13452 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:48:50.389+09:00  WARN 13452 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24T16:48:51.162+09:00  INFO 13452 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24T16:48:51.203+09:00  INFO 13452 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:48:51.517+09:00  WARN 13452 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-24T16:48:51.837+09:00  INFO 13452 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:48:51.844+09:00  INFO 13452 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 3.501 seconds (process running for 4.165)
+2024-09-24T16:50:15.840+09:00  INFO 13452 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:50:15.840+09:00  INFO 13452 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:50:15.842+09:00  INFO 13452 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T16:51:45.052+09:00  WARN 13452 --- [TeamA] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'circleOption' for method parameter type String is not present]
+2024-09-24T16:52:24.908+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-24T16:52:24.920+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24T16:52:24.921+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T16:52:24.924+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

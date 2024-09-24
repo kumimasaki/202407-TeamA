@@ -40,7 +40,7 @@ public class TransactionController {
 	}
 	
     // 支払い方法選択後、購入確認画面に進む
-	@GetMapping("/users/selectPayment/process")
+	@PostMapping("/users/selectPayment/process")
     public String processPaymentSelection(@RequestParam String circleOption, HttpSession session) {
         // 支払い方法をセッションに保存
         session.setAttribute("paymentMethod", circleOption);
@@ -52,6 +52,7 @@ public class TransactionController {
 	public String getConfirmContent(Model model ) {
         // セッションを通じてユーザーログイン情報を確認
         Users user = (Users) session.getAttribute("loginUserInfo");
+        String paymentMethod = (String) session.getAttribute("paymentMethod");
         if (user == null) {
             return "redirect:/user/login";
         }
@@ -60,6 +61,7 @@ public class TransactionController {
         LinkedList<Lesson> list = (LinkedList<Lesson>) session.getAttribute("cart");
 		model.addAttribute("lessonList", list);
 		model.addAttribute("userName", user.getUserName());
+		model.addAttribute("paymentMethod", paymentMethod);
 		return "users_confirm_content.html";
 	}
 	
