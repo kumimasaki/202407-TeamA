@@ -23,6 +23,10 @@ public class LessonService {
 		}
 	}
 
+	public List<Lesson> selectAllLessonListShao() {
+		return lessonDao.findAll();
+	}
+	
 	//	lessonの登録処理チェック
 	//	もし、findByLessonName==null
 	//			処理
@@ -134,4 +138,10 @@ public class LessonService {
 	public void saveLesson(Lesson lesson) {
 	    lessonDao.save(lesson);  // 使用 JPA 保存到数据库
 	}
+	
+	// 講座を検索する処理 Shao
+		public Lesson findByLessonId(Long lessonId) {
+			return lessonDao.findByLessonId(lessonId);
+		}
+		
 }

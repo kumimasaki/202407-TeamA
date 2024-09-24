@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import teama.com.models.entity.Lesson;
 import teama.com.models.entity.Users;
-import teama.com.services.LessonServiceShao;
+import teama.com.services.LessonService;
 
 @Controller
 public class UserLessonListController {
 
 	@Autowired
-	private LessonServiceShao lessonServiceShao;
+	private LessonService lessonService;
 
 	@Autowired
 	private HttpSession session;
@@ -39,7 +39,7 @@ public class UserLessonListController {
 			return "redirect:/user/login";
 		} else {
 			// serviceからすべての情報を取得
-			List<Lesson> lessonList = lessonServiceShao.selectAllLessonList();
+			List<Lesson> lessonList = lessonService.selectAllLessonListShao();
 			model.addAttribute("lessonList", lessonList);
 			model.addAttribute("username", user.getUserName());
 			return "user_lesson_list.html";
@@ -67,7 +67,7 @@ public class UserLessonListController {
 
 		if (session.getAttribute("cart") == null) {
 			LinkedList<Lesson> list = new LinkedList<Lesson>();
-			Lesson lesson = lessonServiceShao.findByLessonId(lessonId);
+			Lesson lesson = lessonService.findByLessonId(lessonId);
 			list.add(lesson);
 			session.setAttribute("cart", list);
 			// ユーザーがログインしていない場合、ログインページにリダイレクト
@@ -82,7 +82,7 @@ public class UserLessonListController {
 			}
 		} else {
 			LinkedList<Lesson> list = (LinkedList<Lesson>) session.getAttribute("cart");
-			Lesson lesson = lessonServiceShao.findByLessonId(lessonId);
+			Lesson lesson = lessonService.findByLessonId(lessonId);
 
 			// カートに同じ講座があるかどうかチェック
 			if (isLessonExist(lessonId, list)) {

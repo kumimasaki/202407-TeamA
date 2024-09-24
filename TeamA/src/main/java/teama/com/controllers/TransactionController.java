@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import teama.com.models.entity.Lesson;
 import teama.com.models.entity.Users;
-import teama.com.services.LessonServiceShao;
+import teama.com.services.LessonService;
 
 @Controller
 public class TransactionController {
 	@Autowired
-	private LessonServiceShao lessenService;
+	private LessonService lessenService;
 	
 	//Sessionを使えるように宣言
 	@Autowired
