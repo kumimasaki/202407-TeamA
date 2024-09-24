@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>講座の削除完了</title>
     <link rel="stylesheet" th:href="@{/css/lesson_delete_complete.css}">
 </head>
+
 <body>
     <header>
         <div class="header-left">
-			<span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
-		</div>
-        <div class="header-right">
-            <a href="#">情報変更</a>
-            <a href="/admin/logout">ログアウト</a>
+            <span id="adminname-display" th:text="${adminName}">adminName</span>、ようこそ。
         </div>
-        <h1>講座の削除</h1>
+		<h2>講座の削除</h2>
+        <nav class="bar">
+            <button onclick="location.href='/404'">情報変更</button>
+            <button onclick="location.href='/admin/logout'">ログアウト</button>
+        </nav>
     </header>
 
     <main>
         <form action="@{/lesson/delete}" method="post">
-        <div class="main-content">
-            <h4>講座の削除が完了しました</h4>
-            <div class="buttons">
-                <a href="/lesson/list" class="btn-back">講座一覧へ戻る</a>
+            <div class="main-content">
+                <h4>講座の削除が完了しました</h4>
+                <div class="buttons">
+                    <a href="/lesson/list" class="btn-back">講座一覧へ戻る</a>
+                </div>
             </div>
-        </div>
-		</form>
+        </form>
     </main>
 
-	<footer>
-	    <p>Copyright©2024 Team A.</p>
-	</footer>
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
 </body>
+
 </html>

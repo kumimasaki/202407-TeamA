@@ -65,7 +65,7 @@ nav button {
 
 /* 講座列表容器样式 */
 .section-details{
-    height: 150px;/* 设置高度 */
+    height: 200px;/* 设置高度 */
     width: 700px;/* 设置宽度 */
     margin: 20px auto; /* 使容器居中显示，并设置上下外边距 */
     padding: 20px; /* 设置容器内边距 */

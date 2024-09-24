@@ -1,132 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
+/* 全局样式 */
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  background-color:white;
-  font-size: clamp(12px, 2vw, 24px); /* 字体在 12px 到 24px 之间根据屏幕大小缩放 */
-  /* font-size: 2vw; 字体大小为视口宽度的 2% */
+    font-family: Arial, sans-serif; /* 设置全局字体 */
+    margin: 0; /* 去除默认外边距 */
+    padding: 0; /* 去除默认内边距 */
+    display: flex; /* 使内容采用弹性布局 */
+    flex-direction: column; /* 垂直排列内容 */
+    min-height: 100vh; /* 确保页面高度至少占满整个视口高度 */
 }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* 使 wrapper 撑满整个视窗 */
-}
-
+/* 页眉样式 */
 header {
-  background-color: #9eb6ce;
-  color: black;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+    display: flex; /* 使页眉内容采用弹性布局 */
+    align-items: center; /* 垂直居中页眉内容 */
+    justify-content: space-between; /* 页眉内容在左右两侧分布 */
+    padding: 20px; /* 设置页眉内边距 */
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* 渐变背景色 */
 }
-
-header h1 {
-  padding: 10px 20px;
-  /* 
-  border-radius: 8px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
-  */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.header-left {
-  font-size:  clamp(12px, 2vw, 18px);
-  padding-left: 1%;
+.header-title {
+    text-align: center; /* 标题文本居中 */
+    font-size: 24px; /* 设置标题字体大小 */
+    font-weight: bold; /* 设置标题为粗体 */
+    color: #000000; /* 设置标题颜色为黑色 */
+    margin-left: 150px; /* 调整标题的左边距，使其视觉居中 */
 }
 
 .header-right {
-  display: flex;
-  gap: 10px;
-  padding-right: 10px;
+    display: flex; /* 使右侧内容采用弹性布局 */
+    align-items: center; /* 垂直居中右侧内容 */
+}
+/* 导航按钮样式 */
+nav {
+    display: flex; /* 使导航按钮采用弹性布局 */
+    align-items: center; /* 垂直居中导航按钮 */
 }
 
-.header-right a {
-  padding: clamp(8px, 1vw, 16px);
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  /* border: none;
-  background-color: #b4cae4;
-  border-radius: 8px;
-   */
+nav button {
+    margin-right: 20px; /* 设置按钮右边距 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    padding: 10px 20px; /* 设置按钮内边距，使其大小一致 */
+    font-size: 16px; /* 设置按钮字体大小 */
 }
 
+/* メイン */
 main {
-  flex-grow: 1; /* 使 main 内容区域自动扩展，推挤 footer 到页面底部 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 70vh; */
+    flex-grow: 1; /* 使 main 内容区域自动扩展，推挤 footer 到页面底部 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+  
 .main-content {
-  background-color: #b4cae4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%); /* 渐变背景色 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px;
+    width: 500px;
 }
-
+  
 .main-content h4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
 }
-
+  
 .buttons {
-  display: flex; /* 启用 flex 布局 */
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* 按钮之间的间距 */
-  margin: 30px auto;
-  padding: 10px; /* 修改为具体的 padding 值 */
+    display: flex; /* 启用 flex 布局 */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 按钮之间的间距 */
+    margin: 30px auto;
+    padding: 10px; /* 修改为具体的 padding 值 */
 }
-
+  
 .buttons a {
-  padding: 10px 20px; /* 合理的 padding 值 */
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
+    padding: 10px 20px; /* 合理的 padding 值 */
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
-
+  
 .btn-continue {
-  background-color: #ffeb3b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5vh auto 2vh;
-  min-width: 250px; /* 确保按钮有足够的宽度 */
-  white-space: nowrap; /* 防止文本换行 */
-  overflow: hidden; /* 避免溢出内容显示 */
-  text-overflow: ellipsis; /* 超出部分显示省略号 */
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto 2vh;
+    min-width: 250px; /* 确保按钮有足够的宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    overflow: hidden; /* 避免溢出内容显示 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
 }
-
-
+  
+  
 .btn-back {
-  background-color: #06ea06;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:5vh auto;
+    background-color: #d8dfd8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5vh auto;
 }
-
+  
 /* 页脚样式 */
 footer {
     padding: 20px; /* 设置页脚内边距 */
@@ -137,9 +113,10 @@ footer {
     width: 100%; /* 页脚宽度占满整个视口 */
     bottom: 0; /* 确保页脚在页面底部 */
 }
-
+  
 /* 页脚文本样式 */
 footer p {
     margin: 0; /* 去除段落默认外边距 */
     font-size: 14px; /* 设置文本字体大小 */
 }
+  

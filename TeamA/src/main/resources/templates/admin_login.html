@@ -23,8 +23,8 @@
         <div class="c">
             <form class="d" th:action="@{/admin/login/process}" method="post">
                 <h1>Admin</h1>
-                <input type="text" class="e" placeholder="EMAIL" name="adminEmail">
-                <input type="text" class="e" placeholder="PASSWORD" name="adminPassword">
+                <input type="text" class="e" placeholder="EMAIL" name="adminEmail" required>
+                <input type="password" class="e" placeholder="PASSWORD" name="adminPassword" required>
                 <!-- <a href="#" class="f">Forget your password?</a> -->
                 <button class="g">Login</button>
             </form>

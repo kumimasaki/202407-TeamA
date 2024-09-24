@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import teama.com.models.entity.Users;
-import teama.com.services.TransactionHistoryService;
 import teama.com.services.UserService;
 
 @Controller
@@ -17,7 +16,7 @@ public class TransactionHistoryController {
     @Autowired
     private HttpSession session;
 
-    @Autowired
+//    @Autowired
 //    private TransactionHistoryService transactionHistoryService;
 
     @Autowired

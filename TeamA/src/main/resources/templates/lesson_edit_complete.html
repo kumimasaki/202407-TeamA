@@ -11,11 +11,11 @@
         <div class="header-left">
 			<span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
 		</div>
-        <div class="header-right">
-            <a href="#">情報変更</a>
-            <a href="/admin/logout">ログアウト</a>
-        </div>
-        <h1>講座の変更</h1>
+		<h2>講座の変更</h2>
+		<nav class="bar">
+		    <button onclick="location.href='/情報変更'">情報変更</button>
+		    <button onclick="location.href='/admin/logout'">ログアウト</button>
+		</nav>
     </header>
 
     <main>
@@ -23,8 +23,7 @@
         <div class="main-content">
             <h4>講座の変更が完了しました</h4>
             <div class="buttons">
-                
-                <a href="/lesson/edit" class="btn-continue">講座変更を続ける</a>
+                <!--a href="/lesson/edit" class="btn-continue">講座変更を続ける</a-->
                 <a href="/lesson/list" class="btn-back">講座一覧へ戻る</a>
             </div>
         </div>

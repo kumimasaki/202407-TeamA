@@ -46,9 +46,10 @@ public class LessonEditController {
 			// そうでない場合、編集画面に編集する内容を渡す
 			// 編集画面を表示
 			if (lesson == null) {
+				model.addAttribute("lesson", lesson);
 				return "redirect:/lesson/list";
 			} else {
-				model.addAttribute("admin", admin.getAdminName());
+				model.addAttribute("adminName", admin.getAdminName());
 				model.addAttribute("lesson", lesson);
 				return "lesson_edit.html";
 			}
@@ -59,7 +60,7 @@ public class LessonEditController {
 	@PostMapping("/lesson/edit/process")
 	public String lessonUpdate(@RequestParam String imageName, @RequestParam String lessonName,
 			@RequestParam int price, @RequestParam LocalDate startDate, @RequestParam LocalTime finishTime,
-			@RequestParam LocalTime startTime, @RequestParam String description, @RequestParam Long lessonId) {
+			@RequestParam LocalTime startTime, @RequestParam String description, @RequestParam Long lessonId,Model model) {
 		// セッションからログインしている人の情報をadminという変数に格納
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
 		// もし、admin == nullだったら、ログイン画面にリダイレクトする
@@ -68,16 +69,10 @@ public class LessonEditController {
 		// もし、lessonUpdateの結果がtrueの場合は、講座変更完了にリダイレクト
 		// そうでない場合、講座編集画面にリダイレクトする
 		if (admin == null) {
+			model.addAttribute("adminName", admin.getAdminName());
 			return "redirect:/admin/login";
 		} else {
-//			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
-//					+ imageName.getOriginalFilename();
-//			try {
-//				Files.copy(lessonImage.getInputStream(), Path.of("src/main/resources/static/lesson-img/" + fileName));
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
-			if (lessonService.lessonUpdate(lessonId, startDate, startTime, finishTime, description, lessonName, price,
+			if (lessonService.lessonUpdate(lessonId, startDate, startTime, finishTime, lessonName,description,  price,
 					imageName, admin.getAdminId())) {
 				return "lesson_edit_complete.html";
 			} else {
