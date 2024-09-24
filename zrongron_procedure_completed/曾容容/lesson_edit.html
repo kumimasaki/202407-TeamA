@@ -5,71 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>講座編集</title>
-    <link rel="stylesheet" th:href="@{css/lesson_edit.css}">
+    <link rel="stylesheet" href="css/lesson_edit.css">
 </head>
 
 <body>
     <header>
         <div class="adminname">
-            <span id="adminname-display" th:text="${adminName}">adminName</span>、ようこそ。
+            <span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
         </div>
         <h2>講座編集</h2>
         <nav class="bar">
             <button onclick="location.href='/情報変更'">情報変更</button>
-            <button onclick="location.href='/管理者追加'">管理者追加</button>
-            <button onclick="location.href='/ログアウト'">ログアウト</button>
+            <button onclick="location.href='/admin/logout'">ログアウト</button>
         </nav>
     </header>
     <main>
-        <div class="return">>>講座一覧に戻る</div>
+        <div><a th:href="@{/lesson/list}" class="return">>>講座一覧に戻る</a></div>
         <section class="register-section">
-            <form action="" method="">
+            <div class="image-container">
+                <img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.lessonImage})}" alt="講座画像" class="image">
+                <div class="file-upload">
+                    <button class="btn2"
+                        th:attr="onClick='location.href=\''+'/lesson/image/change/'+${lesson.lessonId}+'\''">講座画像を変更</button>
+				</div>
+            </div>
+            <form th:action="@{/lesson/edit/process}" method="post" enctype="multipart/form-data">
                 <div class="section-details">
-                    <div class="image-container">講座画像
-                        <div class="file-upload">
-                            <input type="file" name="lessonImage">
-                        </div>
-                    </div>
                     <div class="section-details">
                         <div class="register-section-details">
                             <label class="lesson-name" for="lesson-name"> 講座名:</label>
-                            <input type="text" name="lessonName" placeholder="既に登録している内容">
+                            <input type="text" name="lessonName" placeholder="既に登録している内容"
+                                th:value="${lesson.lessonName}">
                         </div>
                     </div>
                     <div class="register-section-details">
                         <div class="register-section-details_flex">
                             <label class="price" for="price">料金:</label>
-                            <input type="text" name="price" placeholder="既に登録している内容">
+                            <input type="text" name="price" placeholder="既に登録している内容" th:value="${lesson.lessonFee}">
                         </div>
                         <div class="register-section-details_flex">
                             <label class="start_date" for="start_date">開始日:</label>
-                            <input type="date" name="startDate" placeholder="既に登録している内容">
+                            <input type="date" name="startDate" placeholder="既に登録している内容" th:value="${lesson.startDate}">
                         </div>
-                        <div class="register-section-details_flex">
+                        <!--div class="register-section-details_flex">
                             <label class="end_date" for="end_date">終了日:</label>
-                            <input type="date" name="endDate" placeholder="既に登録している内容">
-                        </div>
+                            <input type="date" name="endDate" placeholder="既に登録している内容" value="${lesson.endDate}">
+                        </div-->
                         <div class="register-section-details_flex">
                             <label class="start_time" for="start_time">レッスン開始時間:</label>
-                            <input type="time" name="startTime" placeholder="既に登録している内容">
+                            <input type="time" name="startTime" placeholder="既に登録している内容" th:value="${lesson.startTime}">
                         </div>
                         <div class="register-section-details_flex">
-                            <label class="lesson_time" for="lesson_time">レッスン時間:</label>
-                            <input type="time" name="lessonTime" placeholder="既に登録している内容">
+                            <label class="lesson_time" for="lesson_time">レッスン終了時間:</label>
+                            <input type="time" name="finishTime" placeholder="既に登録している内容"
+                                th:value="${lesson.finishTime}">
                         </div>
                         <div class="register-section-details_flex">
                             <div class="description">講座の情報
-                                <textarea name="description" placeholder="講座の情報を入力してください。"></textarea>
+                                <textarea name="description" placeholder="講座の情報を入力してください。"
+                                    th:text="${lesson.lessonDetail}"></textarea>
                             </div>
                         </div>
-                        <div class="button">
-                            <input type="hidden" name="button" value="">
-                            <button class="btn" onclick="history.back();" type="button">保存せずに戻る</button>
-                            <button class="btn">変更を保存</button>
-                            <input type="hidden" name="" value="">
-                            <button class="btn_delete">講座を削除</button>
-                        </div>
                     </div>
+                </div>
+                <div class="button">
+                    <input type="hidden" name="button" th:value="${lesson.lessonId}">
+                    <button class="btn" onclick="history.back();" type="button">保存せずに戻る</button>
+                    <input type="hidden" name="lessonId" th:value="${lesson.lessonId}">
+					<input type="hidden" name="imageName" th:value="${lesson.imageName}">
+                    <button class="btn">変更を保存</button>
                 </div>
             </form>
         </section>

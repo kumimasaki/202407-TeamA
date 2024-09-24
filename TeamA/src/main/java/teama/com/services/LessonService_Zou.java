@@ -29,16 +29,16 @@ public class LessonService_Zou {
 	//true
 	//そうでない場合
 	//false
-	public boolean createLesson(LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime,
-			String lessonName, String lessonDetail, int lessonFee, String imageName, Long adminId) {
-		if (lessonDaoZou.findByLessonName(lessonName) == null) {
-			lessonDaoZou.save(new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
-					adminId));
-			return true;
-		} else {
-			return false;
-		}
-	}
+//	public boolean createLesson(LocalDate startDate, LocalDateTime startTime, LocalDateTime finishTime,
+//			String lessonName, String lessonDetail, int lessonFee, String imageName, Long adminId) {
+//		if (lessonDaoZou.findByLessonName(lessonName) == null) {
+//			lessonDaoZou.save(new Lesson(startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, imageName,
+//					adminId));
+//			return true;
+//		} else {
+//			return false;
+//		}
+//	}
 
 	public boolean createLesson(LocalDate startDate, LocalTime startTime, LocalTime finishTime,
 			String lessonName, String lessonDetail, int lessonFee, String imageName, Long adminId) {
@@ -106,28 +106,28 @@ public class LessonService_Zou {
 	//コントローラーclassからもらった、lessonIdを使って、編集する前のデータを取得
 	//変更するべきところだけ、セッターを使用してデータの更新をする
 	//trueを返す
-	public boolean lessonUpdate(Long lessonId, LocalDate startDate,
-			//@Column(columnDefinition = "TIME")
-			LocalDateTime startTime,
-			//@Column(columnDefinition = "TIME")
-			LocalDateTime finishTime, String lessonName, String lessonDetail, int lessonFee, String imageName,
-			Long adminId) {
-		if (lessonId == null) {
-			return false;
-		} else {
-			Lesson lesson = lessonDaoZou.findByLessonId(lessonId);
-			lesson.setStartDate(startDate);
-			lesson.setStartTime(startTime);
-			lesson.setFinishTime(finishTime);
-			lesson.setLessonName(lessonName);
-			lesson.setLessonDetail(lessonDetail);
-			lesson.setLessonFee(lessonFee);
-			lesson.setImageName(imageName);
-			lesson.setAdminId(adminId);
-			lessonDaoZou.save(lesson);
-			return true;
-		}
-	}
+//	public boolean lessonUpdate(Long lessonId, LocalDate startDate,
+//			//@Column(columnDefinition = "TIME")
+//			LocalDateTime startTime,
+//			//@Column(columnDefinition = "TIME")
+//			LocalDateTime finishTime, String lessonName, String lessonDetail, int lessonFee, String imageName,
+//			Long adminId) {
+//		if (lessonId == null) {
+//			return false;
+//		} else {
+//			Lesson lesson = lessonDaoZou.findByLessonId(lessonId);
+//			lesson.setStartDate(startDate);
+//			lesson.setStartTime(startTime);
+//			lesson.setFinishTime(finishTime);
+//			lesson.setLessonName(lessonName);
+//			lesson.setLessonDetail(lessonDetail);
+//			lesson.setLessonFee(lessonFee);
+//			lesson.setImageName(imageName);
+//			lesson.setAdminId(adminId);
+//			lessonDaoZou.save(lesson);
+//			return true;
+//		}
+//	}
 	public boolean lessonUpdate(Long lessonId, LocalDate startDate,
 			//@Column(columnDefinition = "TIME")
 			LocalTime startTime,

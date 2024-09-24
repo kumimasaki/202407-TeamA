@@ -30,6 +30,7 @@ public class LessonListController {
 		// そうでない場合
 		// ログインしている人の名前の情報を画面に渡して講座一覧のhtmlを表示。
 		if (admin == null) {
+			model.addAttribute("adminName", admin.getAdminName());
 			return "redirect:/admin/login";
 		} else {
 			// 講座の情報を取得する。

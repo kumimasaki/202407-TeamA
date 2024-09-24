@@ -26,44 +26,44 @@
             <form th:action="@{/lesson/register/process}" method="post" enctype="multipart/form-data">
                 <div class="section-details">
                     <div class="image-container">講座画像
-						<div class="file-upload">
-						    <input type="file" name="lessonImage">
-						</div>
+                        <div class="file-upload">
+                            <input type="file" name="lessonImage">
+                        </div>
                     </div>
                     <div class="section-details">
                         <div class="register-section-details">
                             <label class="lesson-name" for="lesson-name"> 講座名</label>
                             <input type="text" name="lessonName" placeholder="講座名を入力してください。">
                         </div>
-                    </div>
-                    <div class="register-section-details">
-                        <div class="register-section-details_flex">
-                            <label class="price" for="price">料金:</label>
-                            <input type="text" name="price" placeholder="料金を入力してください">
-                        </div>
-                        <div class="register-section-details_flex">
-                            <label class="start_date" for="start_date">開始日:</label>
-                            <input type="date" name="startDate" placeholder="開始日を入力してください">
-                        </div>
-                        <div class="register-section-details_flex">
+                        <div class="register-section-details">
+                            <div class="register-section-details_flex">
+                                <label class="price" for="price">料金:</label>
+                                <input type="text" name="price" placeholder="料金を入力してください">
+                            </div>
+                            <div class="register-section-details_flex">
+                                <label class="start_date" for="start_date">開始日:</label>
+                                <input type="date" name="startDate" placeholder="開始日を入力してください">
+                            </div>
+                            <!--div class="register-section-details_flex">
                             <label class="end_date" for="end_date">終了日:</label>
                             <input type="date" name="endDate" placeholder="終了日を入力してください">
-                        </div>
-                        <div class="register-section-details_flex">
-                            <label class="start_time" for="start_time">レッスン開始時間:</label>
-                            <input type="time" name="startTime" placeholder="レッスン開始時間を入力してください">
-                        </div>
-                        <div class="register-section-details_flex">
-                            <label class="lesson_time" for="lesson_time">レッスン時間:</label>
-                            <input type="time" name="lessonTime" placeholder="レッスン時間を入力してください">
-                        </div>
-                        <div class="register-section-details_flex">
-                            <div class="description">講座の情報
-                                <textarea name="description" placeholder="講座の情報を入力してください。"></textarea>
+                        </div-->
+                            <div class="register-section-details_flex">
+                                <label class="start_time" for="start_time">レッスン開始時間:</label>
+                                <input type="time" name="startTime" placeholder="レッスン開始時間を入力してください">
                             </div>
-                        </div>
-                        <div class="button">
-                            <button class="btn">講座を登録</button>
+                            <div class="register-section-details_flex">
+                                <label class="lesson_time" for="lesson_time">レッスン終了時間:</label>
+                                <input type="time" name="lessonTime" placeholder="レッスン時間を入力してください">
+                            </div>
+                            <div class="register-section-details_flex">
+                                <div class="description">講座の情報
+                                    <textarea name="description" placeholder="講座の情報を入力してください。"></textarea>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button class="btn">講座を登録</button>
+                            </div>
                         </div>
                     </div>
                 </div>

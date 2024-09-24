@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>講座登録の完了</title>
+    <title>講座登録完了</title>
     <link rel="stylesheet" th:href="@{/css/lesson_register_complete.css}">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <div class="header-left">
 			<span id="adminname-display"th:text="${adminName}">adminName</span>、ようこそ。
 		</div>
-        <div class="header-right">
-            <a href="#">情報変更</a>
-            <a href="/admin/logout">ログアウト</a>
-        </div>
-        <h1>講座の登録</h1>
+		<h2>講座の登録</h2>
+		        <nav class="bar">
+		          <button onclick="location.href='/情報変更'">情報変更</button>
+		         <button onclick="location.href='/admin/logout'">ログアウト</button>
+		     </nav>
     </header>
 
     <main>
