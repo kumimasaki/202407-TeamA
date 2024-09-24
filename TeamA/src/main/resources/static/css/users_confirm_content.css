@@ -47,6 +47,10 @@ nav button {
     color: #000; 
 }
 
+li{
+	list-style: none;
+}
+
 /* カートアイコン */
 .cart-icon {
     width: 40px; 
@@ -99,6 +103,13 @@ nav button {
     margin-top: 22px;
     margin-left: 20px;
 }
+
+/* 講座图片上传容器样式 */
+img{
+	width: 150px;/* 设置宽度 */
+	height: 150px;/* 设置高度 */
+}
+
 /* 講座名 */
 .lecture-name{
     font-size: 25px; /* 设置标题字体大小 */

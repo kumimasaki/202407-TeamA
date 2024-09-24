@@ -13,7 +13,7 @@
 	<header>
 		<div class="header-left">
 			<div class="username">
-				<span id="username-display" th:text="${username}">Username</span>、ようこそ。
+				<span id="username-display" th:text="${userName}">Username</span>、ようこそ。
 			</div>
 		</div>
 		<div class="header-title">申し込み手続き</div>
@@ -41,7 +41,7 @@
 					<div class="item">
 						<div class="lecture-item">
 							<div class="image-container">
-								<img src="" alt="講座画像">
+								<img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.imageName})}" alt="講座画像" class="image">
 							</div>
 							<div class="lecture-name" th:text="${lesson.lessonName}">講座名</div>
 							<div class="price" th:text="'値段：' + ${lesson.lessonFee} + '円'">値段</div>
@@ -50,7 +50,7 @@
 				</li>
 				<div class="payment_methods_selection">
 					<div class="title">お支払方法選択</div>
-					<div class="card_payment">クレジットカード決済</div>
+					<div class="card_payment" th:text="${paymentMethod}"></div>
 				</div>
 				<div class="button1">
 					<button class="btn1" onclick="history.back();" type="button">戻る</button>
