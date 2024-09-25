@@ -31,5 +31,7 @@ public interface LessonDao extends JpaRepository<Lesson, Long> {
 	// DLETE FROM lesson WHERE lesson-id = ?
 	void deleteByLessonId(Long lessonId);
 
+	// 講座の画像を表示(単一取得)
+	// SELECT * FROM lesson WHERE image-name = ?
 	Lesson findByImageName(String imageName);
 }
