@@ -79,6 +79,10 @@ button:hover {
     cursor: pointer; 
 }
 
+li{
+	list-style: none;
+}
+
 /* 商品リストコンテナ */
 .product-list-container {
     width: 1000px; 

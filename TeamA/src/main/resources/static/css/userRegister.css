@@ -19,7 +19,7 @@ body {
 .b {
     width: 800px;
     height: 650px;
-    background-image: url(image/３.jpg); 
+    background-image: url(../image/3.jpg); 
     background-size: cover;
 }
 

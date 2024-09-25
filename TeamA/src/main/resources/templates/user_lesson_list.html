@@ -41,7 +41,7 @@
 		<li th:each="lesson:${lessonList}">
 			<div class="product-item">
 				<div class="product-image-container">
-					<img th:src="@{/lesson_img/{imagePath}(imagePath=${lesson.imageName})}" alt="Lesson Image"
+					<img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.imageName})}" alt="講座画像"
 						class="product-image">
 				</div>
 				<div class="product-info">

@@ -127,6 +127,10 @@ button:hover {
     overflow-y: auto; 
 }
 
+li{
+	list-style: none;
+}
+
 /* 商品アイテム */
 .product-item {
     width: 900px; 
