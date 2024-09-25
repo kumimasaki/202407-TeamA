@@ -94,6 +94,10 @@ button:hover {
     overflow-y: auto; 
 }
 
+li{
+	list-style: none;
+}
+
 /* 商品アイテムのスタイル設定 */
 .product-item {
     width: 75%; 

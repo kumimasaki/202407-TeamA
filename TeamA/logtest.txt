@@ -2740,3 +2740,190 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-09-24T16:52:24.920+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-24T16:52:24.921+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-09-24T16:52:24.924+09:00  INFO 13452 --- [TeamA] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T10:42:13.327+09:00  INFO 18084 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 18084 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T10:42:13.329+09:00  INFO 18084 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T10:42:13.968+09:00  INFO 18084 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T10:42:14.028+09:00  INFO 18084 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2024-09-25T10:42:14.534+09:00  INFO 18084 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T10:42:14.552+09:00  INFO 18084 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T10:42:14.552+09:00  INFO 18084 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T10:42:14.619+09:00  INFO 18084 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T10:42:14.620+09:00  INFO 18084 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2024-09-25T10:42:14.778+09:00  INFO 18084 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T10:42:14.862+09:00  INFO 18084 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T10:42:14.904+09:00  INFO 18084 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T10:42:15.251+09:00  INFO 18084 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T10:42:15.279+09:00  INFO 18084 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T10:42:16.152+09:00  INFO 18084 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18d610e1
+2024-09-25T10:42:16.155+09:00  INFO 18084 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T10:42:16.714+09:00  WARN 18084 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T10:42:18.200+09:00  INFO 18084 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T10:42:18.428+09:00  INFO 18084 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T10:42:18.776+09:00  WARN 18084 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T10:42:19.185+09:00  INFO 18084 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T10:42:19.195+09:00  INFO 18084 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 6.248 seconds (process running for 8.001)
+2024-09-25T10:42:56.786+09:00  INFO 18084 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T10:42:56.786+09:00  INFO 18084 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T10:42:56.788+09:00  INFO 18084 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-25T15:47:01.485+09:00  INFO 18084 --- [TeamA] [RMI TCP Connection(314)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-25T15:47:01.533+09:00  INFO 18084 --- [TeamA] [RMI TCP Connection(314)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T15:47:01.554+09:00  INFO 18084 --- [TeamA] [RMI TCP Connection(314)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T15:47:01.556+09:00  INFO 18084 --- [TeamA] [RMI TCP Connection(314)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T16:11:18.374+09:00  INFO 5752 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 5752 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T16:11:18.376+09:00  INFO 5752 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T16:11:19.066+09:00  INFO 5752 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T16:11:19.146+09:00  INFO 5752 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+2024-09-25T16:11:19.634+09:00  INFO 5752 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T16:11:19.650+09:00  INFO 5752 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T16:11:19.650+09:00  INFO 5752 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T16:11:19.707+09:00  INFO 5752 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T16:11:19.708+09:00  INFO 5752 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1282 ms
+2024-09-25T16:11:19.869+09:00  INFO 5752 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T16:11:19.940+09:00  INFO 5752 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T16:11:19.978+09:00  INFO 5752 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T16:11:20.307+09:00  INFO 5752 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T16:11:20.334+09:00  INFO 5752 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T16:11:20.802+09:00  INFO 5752 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d3c22a5
+2024-09-25T16:11:20.803+09:00  INFO 5752 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T16:11:20.982+09:00  WARN 5752 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T16:11:22.077+09:00  INFO 5752 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T16:11:22.275+09:00  INFO 5752 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:11:22.643+09:00  WARN 5752 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T16:11:23.084+09:00  INFO 5752 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T16:11:23.091+09:00  INFO 5752 --- [TeamA] [main] teama.com.TeamAApplication               : Started TeamAApplication in 5.13 seconds (process running for 6.184)
+2024-09-25T16:11:33.362+09:00  INFO 5752 --- [TeamA] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T16:11:33.362+09:00  INFO 5752 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T16:11:33.363+09:00  INFO 5752 --- [TeamA] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-25T16:18:46.877+09:00  INFO 17684 --- [TeamA] [main] teama.com.TeamAApplication               : Starting TeamAApplication using Java 21.0.3 with PID 17684 (C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA\target\classes started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T16:18:46.879+09:00  INFO 17684 --- [TeamA] [main] teama.com.TeamAApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T16:18:47.432+09:00  INFO 17684 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T16:18:47.488+09:00  INFO 17684 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2024-09-25T16:18:47.926+09:00  INFO 17684 --- [TeamA] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T16:18:47.939+09:00  INFO 17684 --- [TeamA] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T16:18:47.940+09:00  INFO 17684 --- [TeamA] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T16:18:47.997+09:00  INFO 17684 --- [TeamA] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T16:18:47.998+09:00  INFO 17684 --- [TeamA] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2024-09-25T16:18:48.146+09:00  INFO 17684 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T16:18:48.214+09:00  INFO 17684 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T16:18:48.252+09:00  INFO 17684 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T16:18:48.570+09:00  INFO 17684 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T16:18:48.597+09:00  INFO 17684 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T16:18:48.775+09:00  INFO 17684 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@344f9467
+2024-09-25T16:18:48.776+09:00  INFO 17684 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T16:18:48.825+09:00  WARN 17684 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T16:18:49.670+09:00  INFO 17684 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T16:18:49.707+09:00  INFO 17684 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:18:49.994+09:00  WARN 17684 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T16:18:50.311+09:00  WARN 17684 --- [TeamA] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-25T16:18:50.313+09:00  INFO 17684 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:18:50.315+09:00  INFO 17684 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T16:18:50.318+09:00  INFO 17684 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T16:18:50.328+09:00  INFO 17684 --- [TeamA] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-25T16:18:50.346+09:00 ERROR 17684 --- [TeamA] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-25T16:20:29.254+09:00  INFO 5752 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-25T16:20:29.262+09:00  INFO 5752 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:20:29.264+09:00  INFO 5752 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T16:20:29.268+09:00  INFO 5752 --- [TeamA] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T16:49:32.237+09:00  INFO 13024 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Starting UserLoginControllerTest using Java 21.0.3 with PID 13024 (started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T16:49:32.239+09:00  INFO 13024 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T16:49:33.089+09:00  INFO 13024 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T16:49:33.183+09:00  INFO 13024 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2024-09-25T16:49:37.049+09:00  INFO 13024 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T16:49:37.222+09:00  INFO 13024 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T16:49:37.310+09:00  INFO 13024 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T16:49:37.646+09:00  INFO 13024 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T16:49:37.726+09:00  INFO 13024 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T16:49:38.317+09:00  INFO 13024 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6bb01b34
+2024-09-25T16:49:38.320+09:00  INFO 13024 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T16:49:38.469+09:00  WARN 13024 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T16:49:40.041+09:00  INFO 13024 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T16:49:40.120+09:00  INFO 13024 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:49:40.809+09:00  WARN 13024 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T16:49:41.384+09:00  INFO 13024 --- [TeamA] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T16:49:41.384+09:00  INFO 13024 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T16:49:41.385+09:00  INFO 13024 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-25T16:49:41.408+09:00  INFO 13024 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Started UserLoginControllerTest in 9.674 seconds (process running for 12.257)
+2024-09-25T16:49:42.877+09:00  INFO 13024 --- [TeamA] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:49:42.879+09:00  INFO 13024 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T16:49:42.885+09:00  INFO 13024 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T16:52:20.536+09:00  INFO 6192 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Starting UserLoginControllerTest using Java 21.0.3 with PID 6192 (started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T16:52:20.538+09:00  INFO 6192 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T16:52:21.436+09:00  INFO 6192 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T16:52:21.533+09:00  INFO 6192 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2024-09-25T16:52:23.715+09:00  INFO 6192 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T16:52:23.851+09:00  INFO 6192 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T16:52:23.941+09:00  INFO 6192 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T16:52:24.235+09:00  INFO 6192 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T16:52:24.301+09:00  INFO 6192 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T16:52:24.597+09:00  INFO 6192 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c76c029
+2024-09-25T16:52:24.600+09:00  INFO 6192 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T16:52:24.681+09:00  WARN 6192 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T16:52:26.116+09:00  INFO 6192 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T16:52:26.174+09:00  INFO 6192 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:52:26.852+09:00  WARN 6192 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T16:52:27.429+09:00  INFO 6192 --- [TeamA] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T16:52:27.429+09:00  INFO 6192 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T16:52:27.431+09:00  INFO 6192 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-25T16:52:27.456+09:00  INFO 6192 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Started UserLoginControllerTest in 7.426 seconds (process running for 9.211)
+2024-09-25T16:52:28.864+09:00  INFO 6192 --- [TeamA] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T16:52:28.866+09:00  INFO 6192 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T16:52:28.872+09:00  INFO 6192 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T17:11:14.013+09:00  INFO 16180 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Starting UserLoginControllerTest using Java 21.0.3 with PID 16180 (started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T17:11:14.015+09:00  INFO 16180 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T17:11:14.897+09:00  INFO 16180 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T17:11:14.988+09:00  INFO 16180 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2024-09-25T17:11:17.351+09:00  INFO 16180 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T17:11:17.485+09:00  INFO 16180 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T17:11:17.553+09:00  INFO 16180 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T17:11:17.818+09:00  INFO 16180 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T17:11:17.879+09:00  INFO 16180 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T17:11:18.397+09:00  INFO 16180 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c496ae6
+2024-09-25T17:11:18.401+09:00  INFO 16180 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T17:11:18.579+09:00  WARN 16180 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T17:11:20.054+09:00  INFO 16180 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T17:11:20.158+09:00  INFO 16180 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T17:11:20.866+09:00  WARN 16180 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T17:11:21.505+09:00  INFO 16180 --- [TeamA] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T17:11:21.506+09:00  INFO 16180 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T17:11:21.507+09:00  INFO 16180 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-25T17:11:21.536+09:00  INFO 16180 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Started UserLoginControllerTest in 8.023 seconds (process running for 10.072)
+2024-09-25T17:11:23.291+09:00  INFO 16180 --- [TeamA] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T17:11:23.299+09:00  INFO 16180 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T17:11:23.310+09:00  INFO 16180 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T17:12:25.633+09:00  INFO 10016 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Starting UserLoginControllerTest using Java 21.0.3 with PID 10016 (started by しゅうい in C:\Users\しゅうい\Desktop\TeamProject\202407-TeamA\TeamA)
+2024-09-25T17:12:25.636+09:00  INFO 10016 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T17:12:26.547+09:00  INFO 10016 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T17:12:26.640+09:00  INFO 10016 --- [TeamA] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2024-09-25T17:12:28.802+09:00  INFO 10016 --- [TeamA] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T17:12:28.940+09:00  INFO 10016 --- [TeamA] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T17:12:29.024+09:00  INFO 10016 --- [TeamA] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T17:12:29.338+09:00  INFO 10016 --- [TeamA] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T17:12:29.408+09:00  INFO 10016 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T17:12:29.765+09:00  INFO 10016 --- [TeamA] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30e2c9dc
+2024-09-25T17:12:29.769+09:00  INFO 10016 --- [TeamA] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T17:12:29.862+09:00  WARN 10016 --- [TeamA] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25T17:12:31.384+09:00  INFO 10016 --- [TeamA] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T17:12:31.443+09:00  INFO 10016 --- [TeamA] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T17:12:32.133+09:00  WARN 10016 --- [TeamA] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T17:12:32.742+09:00  INFO 10016 --- [TeamA] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T17:12:32.742+09:00  INFO 10016 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T17:12:32.744+09:00  INFO 10016 --- [TeamA] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-25T17:12:32.767+09:00  INFO 10016 --- [TeamA] [main] t.c.controllers.UserLoginControllerTest  : Started UserLoginControllerTest in 7.646 seconds (process running for 9.472)
+2024-09-25T17:12:34.082+09:00  INFO 10016 --- [TeamA] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T17:12:34.085+09:00  INFO 10016 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T17:12:34.099+09:00  INFO 10016 --- [TeamA] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
