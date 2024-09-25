@@ -15,6 +15,7 @@ import teama.com.services.UserService;
 
 @Controller
 public class UserRegisterController {
+
 	
 	@Autowired
 	private UserService userService;
@@ -65,3 +66,4 @@ public class UserRegisterController {
 //    }
 
 }
+
