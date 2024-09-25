@@ -32,4 +32,6 @@ public class AdminLoginController {
 			return "redirect:/lesson/list";
 		}
 	}
+	
+	
 }
