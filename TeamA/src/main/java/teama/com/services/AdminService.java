@@ -21,20 +21,13 @@ public class AdminService {
 	}
 
 	public Admin checkLogin(String adminEmail, String adminPassword) {
-		Admin admin_togyoho = adminDao.findByAdminEmailAndAdminPassword(adminEmail, adminPassword);
-		if (admin_togyoho == null) {
+		Admin admin = adminDao.findByAdminEmailAndAdminPassword(adminEmail, adminPassword);
+		if (admin == null) {
 			return null;
 		} else {
-			return admin_togyoho;
+			return admin;
 		}
 	}
 
-	public Admin checkPassword(String AdminConfirmPassword, String adminPassword) {
-		Admin admin_togyoho = adminDao.findByAdminPasswordAndAdminConfirmPassword(adminPassword, AdminConfirmPassword);
-		if (admin_togyoho == null) {
-			return null;
-		} else {
-			return admin_togyoho;
-		}
-	}
+	
 }
