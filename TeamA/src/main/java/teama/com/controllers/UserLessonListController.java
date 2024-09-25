@@ -41,7 +41,7 @@ public class UserLessonListController {
 			// serviceからすべての情報を取得
 			List<Lesson> lessonList = lessonService.selectAllLessonListShao();
 			model.addAttribute("lessonList", lessonList);
-			model.addAttribute("username", user.getUserName());
+			model.addAttribute("userName", user.getUserName());
 			return "user_lesson_list.html";
 		}
 	}
