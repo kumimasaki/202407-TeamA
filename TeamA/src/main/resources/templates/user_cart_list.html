@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lecture Purchase Site</title>
+	<link rel="stylesheet" th:href="@{/css/user_cart_list.css}">
+</head>
+
+<body>
+	<!-- ヘッダーセクション -->
+	<header>
+		<div class="header-left">
+			<div class="username">
+				<span id="username-display" th:text="${userName}">Username</span>、ようこそ。
+			</div>
+		</div>
+		<div class="header-title">
+			カート一覧
+		</div>
+		<div class="header-right">
+			<nav>
+				<button onclick="location.href='/user/lesson/list'">講座一覧</button>
+				<button onclick="location.href='/transaction/history'">購入履歴</button>
+				<button onclick="location.href='/user/password/reset'">情報変更</button>
+				<button onclick="location.href='/user/logout'">ログアウト</button>
+			</nav>
+			<a class="cart-icon" th:href="@{/cart/list}"></a>
+		</div>
+	</header>
+
+	<!-- 商品リストセクション -->
+	<div class="product-list-container">
+		<!-- 商品アイテム1 -->
+		<li th:each="lesson:${lessonList}">
+			<div class="product-item">
+				<div class="product-image-container">
+					<img src="path/to/product1-image.jpg" alt="Product 1 Image" class="product-image">
+				</div>
+				<div class="product-info">
+					<h2 class="product-name" th:text="${lesson.lessonName}">商品名</h2>
+					<p class="product-description" th:text="${lesson.lessonDetail}">商品詳細</p>
+					<p class="product-price" th:text="'値段：' + ${lesson.lessonFee} + '円'">値段</p>
+					<button th:attr="onClick='location.href=\''+'/cart/delete/'+${lesson.lessonId}+'\''">削除</button>
+				</div>
+			</div>
+		</li>
+
+		<!-- 合計金額と支払いボタンセクション -->
+		<div class="total-price-container">
+			<p class="total-price" th:text="'合計金額：' + ${total} + '円'">合計金額</p>
+			<button class="pay-button" onclick="location.href='/users/selectPayment'">支払い</button>
+		</div>
+	</div>
+
+	<!-- フッターセクション -->
+	<footer>
+		<p>Copyright©2024 Team A.</p>
+	</footer>
+</body>
+
+</html>

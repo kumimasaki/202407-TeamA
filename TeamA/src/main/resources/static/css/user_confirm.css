@@ -1,0 +1,141 @@
+/* 全体のスタイル設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 情報確認メッセージのスタイル */
+.confirmation-message {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 140px;
+    margin-bottom: 1px;
+}
+
+/* メインコンテンツエリアのスタイル */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+
+/* ユーザー情報コンテナのスタイル */
+.user-info-container {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* 入力フィールドラベルのスタイル */
+.user-info-container label {
+    font-weight: bold;
+}
+
+/* 入力フィールドのスタイル */
+.user-info-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* ボタンコンテナのスタイル */
+.button-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 10px;
+}
+
+/* パスワード表示切り替え用コンテナのスタイル */
+.toggle-password-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* チェックボックスのスタイル */
+.toggle-password-container input[type="checkbox"] {
+    margin-right: 300px;
+}
+
+/* チェックボックスラベルのスタイル */
+.toggle-password-container label {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* ボタンのスタイル */
+.button-container button {
+    padding: 10px 20px;
+    background-color: #98B1D4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40%;
+}
+
+/* ボタンのホバースタイル */
+.button-container button:hover {
+    background-color: #6A8AB8;
+}
+
+/* ヘッダーのスタイル */
+header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%);
+}
+
+/* ヘッダータイトルのスタイル */
+.header-title {
+    font-size: 24px;
+    color: #000000;
+}
+
+/* フッターのスタイル */
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%);
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/* フッター内段落のスタイル */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

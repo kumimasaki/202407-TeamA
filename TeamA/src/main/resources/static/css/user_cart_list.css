@@ -1,0 +1,215 @@
+/* 全体スタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ヘッダー部分 */
+header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%);
+}
+
+.header-left {
+    margin-left: 10px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    flex: 1;
+    margin-left: 370px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* ナビゲーションボタン */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ボタン共通スタイル */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #98B1D4;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7A91BB;
+}
+
+/* カートアイコン */
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('/src/main/resources/static/image/购物车.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* 商品リストコンテナ */
+.product-list-container {
+    width: 1000px;
+    height: 680px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* 商品アイテム */
+.product-item {
+    width: 75%;
+    height: 32%;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 商品画像コンテナ */
+.product-image-container {
+    width: 130px;
+    height: 130px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+/* 商品画像 */
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* 商品情報 */
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+/* 商品名 */
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: -110px;
+    text-align: center;
+}
+
+/* 商品説明 */
+.product-description {
+    max-width: 70%;
+    background-color: rgba(191, 231, 250, 0.5);
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* 商品価格 */
+.product-price {
+    font-weight: bold;
+    font-size: 17px;
+    color: #e96363;
+    align-self: flex-end;
+    margin-right: 9px;
+    margin-top: 10px;
+}
+
+/* カートから削除するボタン */
+.delete-button {
+    font-weight: bold;
+    width: 110px;
+    padding: 9px 9px;
+    font-size: 15px;
+    margin-left: 455px;
+    align-self: flex-end;
+}
+
+/* 合計金額コンテナ */
+.total-price-container {
+    position: absolute;
+    right: 250px;
+    bottom: 70px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e96363;
+    margin-bottom: 10px;
+}
+
+/* 支払いボタン */
+.pay-button {
+    font-weight: bold;
+    width: 140px;
+}
+
+/* フッター部分 */
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #98B1D4 0%, #6A8AB8 100%);
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
