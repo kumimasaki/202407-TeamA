@@ -15,12 +15,11 @@
         </div>
         <h2>講座編集</h2>
         <nav class="bar">
-            <button onclick="location.href='/情報変更'">情報変更</button>
+            <button onclick="location.href='/lesson/list'">講座一覧</button>
             <button onclick="location.href='/admin/logout'">ログアウト</button>
         </nav>
     </header>
     <main>
-        <div><a th:href="@{/lesson/list}" class="return">>>講座一覧に戻る</a></div>
         <section class="register-section">
             <div class="image-container">
 				 <img th:src="@{/lesson-img/{imagePath}(imagePath=${lesson.imageName})}" alt="講座画像" class="image">
@@ -47,10 +46,6 @@
                             <label class="start_date" for="start_date">開始日:</label>
                             <input type="date" name="startDate" placeholder="既に登録している内容" th:value="${lesson.startDate}">
                         </div>
-                        <!--div class="register-section-details_flex">
-                            <label class="end_date" for="end_date">終了日:</label>
-                            <input type="date" name="endDate" placeholder="既に登録している内容" value="${lesson.endDate}">
-                        </div-->
                         <div class="register-section-details_flex">
                             <label class="start_time" for="start_time">レッスン開始時間:</label>
                             <input type="time" name="startTime" placeholder="既に登録している内容" th:value="${lesson.startTime}">

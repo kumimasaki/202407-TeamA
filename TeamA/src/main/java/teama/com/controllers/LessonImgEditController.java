@@ -1,6 +1,7 @@
 package teama.com.controllers;
 
 import java.io.IOException;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
@@ -24,20 +25,23 @@ import teama.com.models.entity.Admin;
 import teama.com.models.entity.Lesson;
 import teama.com.services.LessonService;
 
+//@Controllerアノテーションの主な役割は、主にHTMLページなどのビューを生成すること(司令塔)
 @Controller
 public class LessonImgEditController {
+	// @Autowiredアノテーションをつけて、自動的にインターフェースを実装して、インスタンス化させて、ControllerでHttpSessionを使えるようにします
 	@Autowired
 	private LessonService lessonService;
-	
+
 	@Autowired
 	private LessonDao lessonDao;
 
-//	Sessionが使えるように宣言
 	@Autowired
+	// sessionは、ユーザー情報を、一時的にサーバー側で保持される、 どのページも共通もデータを使いたい時にもちいる機能、（名前、値）という形式で保管される
 	private HttpSession session;
 
 	// 変更画面で講座画像を変更ボタンを押したときの処理
 	@GetMapping("/lesson/image/change/{lessonId}")
+	// @PathVariable ブログIDを使ってデータベースからブログ情報を取得
 	public String getLessonImageEditPage(@PathVariable Long lessonId, Model model) {
 		// 現在ログインしている管理者情報を取得する
 		Admin admin = (Admin) session.getAttribute("loginAdminInfo");
@@ -48,42 +52,46 @@ public class LessonImgEditController {
 		model.addAttribute("lesson", lesson);
 		return "lesson_img_edit.html";
 	}
-	
+
 	// 講座画面の変更で変更ボタンを押したときの処理
 	@PostMapping("/lesson/img/edit/process")
-	public String imgUpdate(
-			@RequestParam Long lessonId,
-			@RequestParam LocalDate startDate,
-			@RequestParam LocalTime startTime,
-			@RequestParam LocalTime finishTime,
-			@RequestParam String lessonName, 
-			@RequestParam String lessonDetail, 
-			@RequestParam int lessonFee,
-			@RequestParam("imageFile") MultipartFile imageFile,
-			Model model) {
-	    if (!imageFile.isEmpty()) {
-	        // 生成带有时间戳的文件名
-	        String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
-	                + imageFile.getOriginalFilename();
-	        try {
-	            // 将文件保存到服务器指定路径
-	            Path uploadPath = Path.of("src/main/resources/static/lesson-img/" + fileName);
-	            Files.copy(imageFile.getInputStream(), uploadPath);
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	            model.addAttribute("errorMessage", "ファイルの保存中にエラーが発生しました。");
-	            return "lesson_img_edit.html";  // 出现错误时，仍然返回编辑页面并显示错误信息
-	        }
-	        Admin admin = (Admin) session.getAttribute("loginAdminInfo");
-	        Long adminId = admin.getAdminId();
-	        lessonService.saveLesson(new Lesson(lessonId,startDate, startTime, finishTime, lessonName, lessonDetail, lessonFee, fileName, adminId));  // 保存 Lesson 实体
-	        
-	        return "lesson_edit_complete.html";  
-	    } else {
-	        model.addAttribute("errorMessage", "ファイルが選択されていません。");
-	        return "lesson_img_edit.html";  // 如果没有选择文件，返回编辑页面并提示
-	    }
+	// @PathVariable ブログIDを使ってデータベースからブログ情報を取得
+	public String imgUpdate(@RequestParam Long lessonId, @RequestParam LocalDate startDate,
+			@RequestParam LocalTime startTime, @RequestParam LocalTime finishTime, @RequestParam String lessonName,
+			@RequestParam String lessonDetail, @RequestParam int lessonFee,
+			@RequestParam("imageFile") MultipartFile imageFile, Model model) {
+		if (!imageFile.isEmpty()) {
+			// ファイルの名前を取得
+			/**
+			 * 現在の日時情報を元に、ファイル名を作成しています。SimpleDateFormatクラスを使用して、日時のフォーマットを指定している。
+			 * 具体的には、"yyyy-MM-dd-HH-mm-ss-"の形式でフォーマットされた文字列を取得している。
+			 * その後、blogImageオブジェクトから元のファイル名を取得し、フォーマットされた日時文字列と連結して、fileName変数に代入
+			 **/
+			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
+					+ imageFile.getOriginalFilename();
+			try {
+				// ファイルの保存作業
+				Path uploadPath = Path.of("src/main/resources/static/lesson-img/" + fileName);
+				Files.copy(imageFile.getInputStream(), uploadPath);
+			} catch (IOException e) {
+				e.printStackTrace();
+				// エラーがあり時、エラーメッセージを表す
+				model.addAttribute("errorMessage", "ファイルの保存中にエラーが発生しました。");
+				// 画像編集を遷移する
+				return "lesson_img_edit.html";
+			}
+			Admin admin = (Admin) session.getAttribute("loginAdminInfo");
+			Long adminId = admin.getAdminId();
+			lessonService.saveLesson(new Lesson(lessonId, startDate, startTime, finishTime, lessonName, lessonDetail,
+					lessonFee, fileName, adminId)); // 保存 Lesson 实体
+			// 画像編集完了を遷移する
+			return "lesson_edit_complete.html";
+		} else {
+			// エラーがあり時、エラーメッセージを表す
+			model.addAttribute("errorMessage", "ファイルが選択されていません。");
+			// 画像編集を遷移する
+			return "lesson_img_edit.html";
+		}
 	}
-	
 
 }
