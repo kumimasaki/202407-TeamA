@@ -44,10 +44,12 @@ nav button {
 .return{
     margin-top: 10px;
     margin-left: 300px;
+	text-decoration: none; /* 去掉链接的下划线 */
+	color: #000000;
 }
 /* 講座列表容器样式 */
 .register-section{
-    height: 500px;/* 设置高度 */
+    height: 520px;/* 设置高度 */
     width: 700px;/* 设置宽度 */
     margin: 20px auto; /* 使容器居中显示，并设置上下外边距 */
     padding: 20px; /* 设置容器内边距 */
@@ -86,7 +88,7 @@ input{
 }
 
 /* 講座名 */
-.lecture-name{
+.lesson-name{
     margin-left: 15px;/* 设置外边距 */
     margin-right: 85px;/* 设置外边距 */
     font-size: 15px; /* 设置标题字体大小 */
@@ -101,33 +103,28 @@ input{
 /* 開始日 */
 .start_date{
     margin-left: 15px;/* 设置外边距 */
-    margin-right: 85px;/* 设置外边距 */
+    margin-right: 81px;/* 设置外边距 */
     font-size: 15px; /* 设置标题字体大小 */
 }
-/* 終了日 */
-.end_date{
-    margin-left: 15px;/* 设置外边距 */
-    margin-right: 85px;/* 设置外边距 */
-    font-size: 15px; /* 设置标题字体大小 */
-}
+
 /* レッスン開始時間 */
 .start_time{
     margin-left: 15px;/* 设置外边距 */
     margin-right: 8px;/* 设置外边距 */
     font-size: 15px; /* 设置标题字体大小 */
 }
-/* レッスン時間 */
+/* レッスン終了時間 */
 .lesson_time{
-    margin-left: 15px;/* 设置外边距 */
-    margin-right: 40px;/* 设置外边距 */
-    font-size: 15px; /* 设置标题字体大小 */
+	margin-left: 15px;/* 设置外边距 */
+	margin-right: 8px;/* 设置外边距 */
+	font-size: 15px; /* 设置标题字体大小 */
 }
 
 /* 講座の情報 */
 .description{
     font-size: 15px; /* 设置标题字体大小 */
     font-weight: bold; /* 设置标题为粗体 */
-    margin-top: 20px;
+    margin-top: 70px; /* 设置外边距 */
 }
 textarea {
     width: 700px;

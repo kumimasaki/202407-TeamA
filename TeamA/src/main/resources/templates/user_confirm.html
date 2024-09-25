@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,18 +21,18 @@
     </div>
 
     <!-- ユーザー情報確認フォーム -->
-   <main>
-    <form th:action="@{/user/confirm/check}" method="post">
+    <main>
+		<form th:action="@{/user/register/check}" method="post">
         <div class="user-info-container">
             <label for="username">ユーザー名：</label>
-            <input type="text" id="username" th:value="${user.userName}" readonly><br> <!-- 使用 user.userName -->
+            <input type="text" id="username" th:value="${userName}" readonly><br>
 
             <label for="email">メールアドレス：</label>
-            <input type="email" id="email" th:value="${user.userEmail}" readonly><br> <!-- 使用 user.userEmail -->
+             <input type="email" id="email" th:value="${userEmail}" readonly><br>
 
             <!-- パスワード表示 -->
             <label for="password">パスワード：</label>
-            <input type="password" id="password" th:value="${user.userPassword}" readonly><br> <!-- 使用 user.userPassword -->
+             <input type="password" id="password" th:value="${userPassword}" readonly>
 
             <!-- パスワード表示切替 -->
             <div class="toggle-password-container">
@@ -45,8 +46,7 @@
             <button type="button" onclick="goBack()">戻る</button>
             <button type="submit">登録確認</button>
         </div>
-    </form>
-</main>
+    </main>
 
     <!-- フッター部分 -->
     <footer>
@@ -72,3 +72,4 @@
 </body>
 
 </html>
+

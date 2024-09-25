@@ -7,30 +7,29 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpSession;
-import teama.com.models.entity.Admin_togyoho;
-import teama.com.services.AdminService_togyoho;
+import teama.com.models.entity.Admin;
+import teama.com.services.AdminService;
 
 @Controller
 public class AdminLoginController {
-@Autowired
-private AdminService_togyoho adminService_togyoho;
-@Autowired
-private HttpSession session;
+	@Autowired
+	private AdminService adminService;
+	@Autowired
+	private HttpSession session;
 
-@GetMapping("/admin/login")
-public String getAdminLoginPage() {
-	return "admin_login.html";
-} 
-
-@PostMapping("/admin/login/process")
-public String postAdminLoginPage(@RequestParam String adminEmail,
-		                         @RequestParam String adminPassword) {
-	Admin_togyoho admin_togyoho=adminService_togyoho.checkLogin(adminEmail, adminPassword);
-	if(admin_togyoho ==null) {
+	@GetMapping("/admin/login")
+	public String getdAminLoginPage() {
 		return "admin_login.html";
-	}else {
-		session.setAttribute("adminInfo", admin_togyoho);
-		return "redirect:/admin/confirm";
 	}
-}
+
+	@PostMapping("/admin/login/process")
+	public String postAdminLoginPage(@RequestParam String adminEmail, @RequestParam String adminPassword) {
+		Admin admin = adminService.checkLogin(adminEmail, adminPassword);
+		if (admin == null) {
+			return "admin_login.html";
+		} else {
+			session.setAttribute("loginAdminInfo", admin);
+			return "redirect:/lesson/list";
+		}
+	}
 }

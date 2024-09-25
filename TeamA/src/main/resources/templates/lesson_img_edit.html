@@ -7,66 +7,47 @@
     <link rel="stylesheet" th:href="@{/css/lesson_img_edit.css}">
 </head>
 <body>
-    <header>
-        <div class="header-left"><span th:text="${adminName}"></span>さん、ようこそ</div>
-        <div class="header-right">
-            <a href="#">情報変更</a>
-            <a href="#">ログアウト</a>
-        </div>
-        <h1>講座画面の変更</h1>
-    </header>
-
+	<header>
+	       <div class="header-left"><span th:text="${adminName}"></span>さん、ようこそ</div>
+	       <h2>講座画面の変更</h2>
+	       <nav class="bar">
+	           <button onclick="location.href='/情報変更'">情報変更</button>
+	           <button onclick="location.href='/admin/logout'">ログアウト</button>
+	       </nav>
+	   </header>
     <main>
-       <!-- <div class="main-content">
-			<form th:action="@{/lesson/img/edit/process}" method="post">
-            <div class="image-preview">
-				<img th:src="@{/images/java.png}" alt="java.png">
-                
-            </div>
-            <div class="file-upload">
-                <label for="file">講座画面：</label>
-                <input type="file" id="file" name="imageName" 
-				th:value="${lesson.imageName}"
-				>
-            </div>
-            <div class="buttons">
-                <a href="#" class="btn-back" onclick="history.back();" type="button">戻る</a>
-                <a href="#" class="btn-edit">変更</a>
-            </div>
-			</form>
-        </div>-->
-		
 		<div class="main-content">
-		    <form th:action="@{/lesson/img/edit/process}" method="post"
-			enctype="multipart/form-data"
-			>
-		        <div class="image-preview">
-		            <!-- 直接显示图片，上传后刷新页面 -->
-		            <img th:src="@{/images/{imageName}(imageName=${imageName})}" alt="写真" width="200px" height="150px">
-		        </div>
+			
+			<form th:action="@{/lesson/img/edit/process}" method="post" enctype="multipart/form-data">
+			    <div class="image-preview">
+			        <!-- 显示已经上传的图片 -->
+			        <img th:if="${lesson.imageName != null}" th:src="@{/lesson-img/{imageName}(imageName=${lesson.imageName})}" alt="写真" width="200px" height="150px">
+			        <!-- 如果没有上传图片，显示提示文字 -->
+			        <p th:if="${lesson.imageName == null}">まだ画像がアップロードされていません。</p>
+			    </div>
 
-		        <div class="file-upload">
-		            <label for="file">講座画面：</label>
-		            <input type="file" id="file" name="imageName">
-		        </div>
-		        
-		        <div class="buttons">
-		            <a href="#" class="btn-back" onclick="history.back();" type="button">戻る</a>
-		            <button type="submit" class="btn-edit">変更</button>
-		        </div>
-		    </form>
+			    <div class="file-upload">
+			        <label for="file">講座画面：</label>
+			        <!-- 用于上传新的图片文件 -->
+			        <input type="file" id="file" name="imageFile">
+			    </div>
+
+			    <div class="buttons">
+			        <a href="#" class="btn-back" onclick="history.back();" type="button">戻る</a>
+			        <button type="submit" class="btn-edit">変更</button>
+			    </div>
+				<input type="hidden" name="lessonId" th:value="${lesson.lessonId}">
+				<input type="hidden" name="startDate" th:value="${lesson.startDate}">
+				<input type="hidden" name="startTime" th:value="${lesson.startTime}">
+				<input type="hidden" name="finishTime" th:value="${lesson.finishTime}">
+				<input type="hidden" name="lessonName" th:value="${lesson.lessonName}">
+				<input type="hidden" name="lessonDetail" th:value="${lesson.lessonDetail}">
+				<input type="hidden" name="lessonFee" th:value="${lesson.lessonFee}">
+			</form>
 		</div>
-
-
     </main>
-
-    <footer>
-        <div class="footer-left">お問合せ</div>
-        <div class="footer-right">
-            <span>Copyright @202407-TeamA</span>
-            <a href="#">情報変更</a>
-            <a href="#">ログアウト</a>
-        </div>
-    </footer>
+	<footer>
+	  <p>Copyright©2024 Team A.</p>
+	</footer>
 </body>
 </html>

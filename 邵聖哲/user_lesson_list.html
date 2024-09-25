@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Purchase Site</title>
+    <link rel="stylesheet" href="user_lesson_list.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-left">
+            <div class="username">
+                <span id="username-display" th:text="${username}">Username</span>、ようこそ。
+            </div>
+        </div>
+        <div class="header-title">
+            講座一覧
+        </div>
+        <div class="header-right">
+            <nav>
+                <button onclick="location.href='/ログアウト'">講座一覧</button>
+                <button onclick="location.href='/購入履歴'">購入履歴</button>
+                <button onclick="location.href='/情報変更'">情報変更</button>
+                <button onclick="location.href='/ログアウト'">ログアウト</button>
+            </nav>
+            <div class="cart-icon" onclick="location.href='/カート'"></div>
+        </div>
+    </header>
+
+    <!-- 商品リスト -->
+    <div class="product-list-container">
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="講座名で検索" />
+                <button type="submit">検索</button>
+            </form>
+        </div>
+        <!-- 商品アイテム1 -->
+        <div class="product-item">
+            <div class="product-image-container">
+                <img src="path/to/product1-image.jpg" alt="Product 1 Image" class="product-image">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">商品名 1</h2>
+                <p class="product-description">商品詳細1</p>
+                <p class="product-price">値段：1000円</p>
+                <button class="add-to-cart-button">カートに入れる</button>
+            </div>
+        </div>
+        
+        <!-- 商品アイテム2 -->
+        <div class="product-item">
+            <div class="product-image-container">
+                <img src="path/to/product2-image.jpg" alt="Product 2 Image" class="product-image">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">商品名 2</h2>
+                <p class="product-description">商品詳細2</p>
+                <p class="product-price">値段：2000円</p>
+                <button class="add-to-cart-button">カートに入れる</button>
+            </div>
+        </div>
+        
+        <!-- 商品アイテム3 -->
+        <div class="product-item">
+            <div class="product-image-container">
+                <img src="path/to/product3-image.jpg" alt="Product 3 Image" class="product-image">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">商品名 3</h2>
+                <p class="product-description">商品詳細3</p>
+                <p class="product-price">値段：3000円</p>
+                <button class="add-to-cart-button">カートに入れる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main></main>
+
+    <!-- フッター -->
+    <footer>
+        <p>Copyright©2024 Team A.</p>
+    </footer>
+</body>
+
+</html>

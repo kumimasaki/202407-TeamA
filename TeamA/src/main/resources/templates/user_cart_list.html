@@ -26,7 +26,8 @@
 				<button onclick="location.href='/user/password/reset'">情報変更</button>
 				<button onclick="location.href='/user/logout'">ログアウト</button>
 			</nav>
-			<a class="cart-icon" th:href="@{/cart/list}"></a>
+
+			<a class="cart-icon" onclick="location.href='/view/cart/list'"></a>
 		</div>
 	</header>
 
@@ -42,7 +43,9 @@
 					<h2 class="product-name" th:text="${lesson.lessonName}">商品名</h2>
 					<p class="product-description" th:text="${lesson.lessonDetail}">商品詳細</p>
 					<p class="product-price" th:text="'値段：' + ${lesson.lessonFee} + '円'">値段</p>
-					<button th:attr="onClick='location.href=\''+'/cart/delete/'+${lesson.lessonId}+'\''">削除</button>
+
+					<button class="delete-button" th:attr="onClick='location.href=\''+'/cart/delete/'+${lesson.lessonId}+'\''">削除</button>
+    
 				</div>
 			</div>
 		</li>

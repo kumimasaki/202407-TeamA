@@ -145,7 +145,7 @@ textarea{
     display: flex; /* 弹性盒子布局 */
     justify-content:  center; /* 水平居中 */
     background-color:#98B1D4; /* 设置标题背景色 */
-    height: 35px;/* 设置高度 */
+    height: 30px;/* 设置高度 */
     width: 150px;/* 设置宽度 */
     font-size: 20px; /* 设置标题字体大小 */
     margin: 0 auto;
@@ -155,7 +155,10 @@ textarea{
     cursor: pointer; /* 鼠标悬停时显示为手型 */
     transition: background-color 0.3s; /* 添加过渡效果 */
     border: none;/* 去掉边框 */
+    text-decoration: none; /* 去掉链接的下划线 */
+    color: #000000;
   }
+
 /* 鼠标悬停时按钮的样式 */
 button:hover {
     background-color: #6A8AB8; /* 悬停时改变背景颜色 */
