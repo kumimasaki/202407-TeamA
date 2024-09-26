@@ -7,18 +7,28 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Admin {
+	// admin_id設定
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long adminId;
 
+	// admin_name設定
 	private String adminName;
+
+	// admin_email設定
 	private String adminEmail;
+
+	// password設定
 	private String adminPassword;
+
+	// adminConfirmPassword設定
 	private String adminConfirmPassword;
 
+	// 空のコンストラク作成
 	public Admin() {
 	}
 
+	// ALLコンストラク作成
 	public Admin(String adminName, String adminEmail, String adminPassword, String adminConfirmPassword) {
 		this.adminName = adminName;
 		this.adminEmail = adminEmail;
@@ -26,6 +36,7 @@ public class Admin {
 		this.adminConfirmPassword = adminConfirmPassword;
 	}
 
+	// get,set作成
 	public Long getAdminId() {
 		return adminId;
 	}
